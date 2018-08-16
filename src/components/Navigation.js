@@ -6,7 +6,7 @@ class Navigation extends Component{
   }
   render(){
     return(
-      <nav className="navbar navbar-expand-lg fixed-top navbar-dark align-items-center">
+      <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark align-items-center">
         <div className="container">
           <div className="navbar-brand"><img src="logo.jpg" /></div>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,14 +49,6 @@ class Navigation extends Component{
               </li>
               <li className="nav-item">
                 <a href="" className="nav-link text-white btn btn-danger rounded">МЕРЧ</a>
-              </li>
-              <li className="nav-item">
-                <a className="ml-2 mr-2" href="https://github.com/Goolpe" target="_blank" rel="noopener noreferrer">
-                  <i className="text-white fab fa-github fa-2x" ></i>
-                </a>
-                <a href="https://www.linkedin.com/in/artur-khabirov-188b7a10a/" target="_blank" rel="noopener noreferrer">
-                  <i className="text-white fab fa-linkedin fa-2x"></i>
-                </a>
               </li>
             </ul>
           </div>

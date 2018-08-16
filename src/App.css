@@ -1,6 +1,3 @@
-body{
-  background: #000;
-}
 @-webkit-keyframes move
 {
     from
@@ -33,9 +30,7 @@ button
 {
   cursor: pointer;
 }
-nav{
-  background-color: #9cd0e5;
-}
+
 
 .navbar .container{
     padding: 0;
@@ -87,4 +82,14 @@ header
 #news{
   position: absolute;
   margin-top:-100px;
+}
+
+.card{
+  background-size: cover;
+  background: no-repeat;
+  background-position: center;
+}
+#schedule{
+  padding-top: 200px;
+  background-color: #000;
 }
