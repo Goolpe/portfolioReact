@@ -37,7 +37,7 @@ button
 }
 
 .navbar-brand img{
-  height:60px;
+    height:60px;
 }
 
 header
@@ -47,9 +47,11 @@ header
     background-position: center;
     background-size: cover;
 }
-#header{
-  padding-top: 60px;  
+
+#content{
+  padding-top: 80px;  
 }
+
 .carousel-item{
 
     height:800px;

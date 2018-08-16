@@ -1,4 +1,7 @@
 import React, {Component} from 'react'
+import {
+  Link
+} from 'react-router-dom'
 
 class Navigation extends Component{
   constructor(props){
@@ -21,10 +24,10 @@ class Navigation extends Component{
             <ul className="navbar-nav ml-auto">
               
               <li className="nav-item">
-                <button className="bg-transparent border-0 nav-link text-white">ГЛАВНАЯ</button>
+                <Link to="/" className="bg-transparent border-0 nav-link text-white">ГЛАВНАЯ</Link>
               </li>
               <li className="nav-item">
-                <button className="bg-transparent border-0 nav-link text-white">О ПРОЕКТЕ</button>
+                <Link to="/about-project" className="bg-transparent border-0 nav-link text-white">О ПРОЕКТЕ</Link>
               </li>
               <li className="nav-item dropdown">
                 <a className="bg-transparent border-0 nav-link text-white dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
