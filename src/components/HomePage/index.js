@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import News from './news';
 import Schedule from './schedule';
+import Arts from './arts';
 import Merch from './merch';
+
 
 class HomePage extends Component {
 	constructor(props){
@@ -35,6 +37,9 @@ class HomePage extends Component {
 			<News />
 			
 			<Schedule />
+
+			<Arts />
+			
 			<Merch />
 		</div>
     );

@@ -45,13 +45,13 @@ class Navigation extends Component{
                 </div>
               </li>
               <li className="nav-item">
-                <a href="/work" className="nav-link text-white">РАСПИСАНИЕ</a>
+                <a href="#schedule" className="nav-link text-white">РАСПИСАНИЕ</a>
               </li>
               <li className="nav-item">
                 <a href="" className="nav-link text-white">ПЛАТНЫЕ ИГРЫ</a>
               </li>
               <li className="nav-item mr-2">
-                <a href="" className="nav-link text-white btn btn-danger rounded">МЕРЧ</a>
+                <a href="#merch" className="nav-link text-white btn btn-danger rounded">МЕРЧ</a>
               </li>
                <button onClick={()=> this.setState({search: !this.state.search})} className="btn btn-outline-light my-2 my-sm-0" type="submit"><i className="fas fa-search"></i>
               </button>

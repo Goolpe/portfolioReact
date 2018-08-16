@@ -84,7 +84,7 @@ header
   margin-top:-100px;
 }
 
-.card{
+#news .card{
   background-size: cover;
   background: no-repeat;
   background-position: center;
@@ -92,6 +92,19 @@ header
 #schedule{
   padding-top: 150px;
   background-color: #20232c;
+}
+
+#arts .card{
+  height:50vh;
+  background: no-repeat;
+  background-position: top;
+  background-size: cover;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#arts .card h1{
+  width:200px;
 }
 .form-inline .form-control{
   width:700px !important;
