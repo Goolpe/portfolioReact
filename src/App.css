@@ -93,3 +93,9 @@ header
   padding-top: 150px;
   background-color: #20232c;
 }
+.form-inline .form-control{
+  width:700px !important;
+}
+footer{
+  background-color: #000;
+}
