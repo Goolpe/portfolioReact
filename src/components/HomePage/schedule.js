@@ -45,8 +45,9 @@ class Schedule extends Component {
 			    		<br />
 						<div>
 							<a href=""><i className="fab fa-youtube text-danger fa-2x mr-4"> YOUTUBE</i></a>
-							<a href=""><i className="fab fa-twitch text-info fa-2x mr-4"> TWITCH</i></a>
-							<a className="btn btn-outline-secondary p-3">ПОДПИСАТЬСЯ НА ОБНОВЛЕНИЯ</a>
+							
+							<a className="btn btn-outline-secondary mr-4 p-3">ПОДПИСАТЬСЯ НА ОБНОВЛЕНИЯ</a>
+							<a href=""><i className="fab fa-twitch text-info fa-2x"> TWITCH</i></a>
 						</div>
 			   		</div>
 		   		</div>
