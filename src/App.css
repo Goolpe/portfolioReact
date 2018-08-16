@@ -1,28 +1,110 @@
-.App {
-  text-align: center;
+@-webkit-keyframes move
+{
+    from
+    {
+        top: 10px;
+        left: 12.5px;
+    }
+    to
+    {
+        top: 25px;
+        left: 12.5px;
+    }
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+@keyframes move
+{
+    from
+    {
+        top: 10px;
+        left: 12.5px;
+    }
+    to
+    {
+        top: 25px;
+        left: 12.5px;
+    }
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.navbar .container{
+    padding: 0;
 }
 
-.App-title {
-  font-size: 1.5em;
+.bg-darkAdd {
+  background-color: #20232c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.2s linear;
 }
 
-.App-intro {
-  font-size: large;
+.bg-darkRemove {
+  background-color: rgba(32, 35, 44, 0);
+  transition: 0.2s linear;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+header
+{
+    height: 100vh;
+
+    background: url(bg-1.jpeg) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.header_works{
+    background: url(bg-1.jpeg) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.header_works__head_name
+{
+    padding-top: 50px;
+}
+
+.header__wrapper
+{
+    height: 100%;
+
+    background: rgba(32, 35, 44, .9);
+}
+
+.header__head_name
+{
+    padding-top: 250px;
+}
+
+.head_name__mouse
+{
+    position: relative;
+
+    width: 30px;
+    margin: 50px auto;
+}
+.head_name__mouse #mouse
+{
+    position: relative;
+
+    width: 32px;
+    height: 50px;
+
+    border: 2px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+.head_name__mouse #mouse #dot
+{
+    position: absolute;
+
+    width: 5px;
+    height: 10px;
+
+    -webkit-animation: move 1s infinite alternate;
+            animation: move 1s infinite alternate;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+
+    border-radius: 20px;
+    background: #fff;
 }
