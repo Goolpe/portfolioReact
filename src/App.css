@@ -1,14 +1,17 @@
+body{
+  background: #000;
+}
 @-webkit-keyframes move
 {
     from
     {
         top: 10px;
-        left: 12.5px;
+        left: 12px;
     }
     to
     {
         top: 25px;
-        left: 12.5px;
+        left: 12px;
     }
 }
 
@@ -17,38 +20,44 @@
     from
     {
         top: 10px;
-        left: 12.5px;
+        left: 12px;
     }
     to
     {
         top: 25px;
-        left: 12.5px;
+        left: 12px;
     }
+}
+
+button
+{
+  cursor: pointer;
+}
+nav{
+  background-color: #9cd0e5;
 }
 
 .navbar .container{
     padding: 0;
 }
 
-.bg-darkAdd {
-  background-color: #20232c;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: 0.2s linear;
-}
-
-.bg-darkRemove {
-  background-color: rgba(32, 35, 44, 0);
-  transition: 0.2s linear;
+.navbar-brand img{
+  height:60px;
 }
 
 header
 {
-    height: 100vh;
-
     background: url(bg-1.jpeg) no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
+#header{
+  padding-top: 60px;  
+}
+.carousel-item{
+
+    height:800px;
 }
 
 .header_works{
@@ -60,7 +69,7 @@ header
 
 .header_works__head_name
 {
-    padding-top: 50px;
+    padding-top: 250px;
 }
 
 .header__wrapper
@@ -75,36 +84,7 @@ header
     padding-top: 250px;
 }
 
-.head_name__mouse
-{
-    position: relative;
-
-    width: 30px;
-    margin: 50px auto;
-}
-.head_name__mouse #mouse
-{
-    position: relative;
-
-    width: 32px;
-    height: 50px;
-
-    border: 2px solid #fff;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-}
-.head_name__mouse #mouse #dot
-{
-    position: absolute;
-
-    width: 5px;
-    height: 10px;
-
-    -webkit-animation: move 1s infinite alternate;
-            animation: move 1s infinite alternate;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-
-    border-radius: 20px;
-    background: #fff;
+#news{
+  position: absolute;
+  margin-top:-100px;
 }
