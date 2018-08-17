@@ -153,6 +153,36 @@ header
 {
     text-decoration: none;
 }
+
+#social{
+  background-color: #20232c;
+}
+
+#social h2 a:nth-child(1) i:hover{
+  color: #4a76a8;
+}
+
+#social h2 a:nth-child(2) i:hover{
+  color: #7389dc;
+}
+#social h2 a:nth-child(3) i:hover{
+  color: #ff0000;
+}
+#social h2 a:nth-child(4) i:hover{
+  color: #f96854;
+}
+#social h2 a:nth-child(5) i:hover{
+  color: #2da5e1;
+}
+
+#reviews img{
+  height: 200px;
+}
+
+#reviews .carousel-inner{
+  height: 300px;
+}
+
 .form-inline .form-control
 {
     width: 700px !important;

@@ -3,7 +3,8 @@ import Articles from './articles';
 import Schedule from './schedule';
 import Arts from './arts';
 import Merch from './merch';
-
+import Reviews from './reviews';
+import Social from './social';
 
 class HomePage extends Component {
   constructor(props){
@@ -47,6 +48,10 @@ class HomePage extends Component {
 			<Arts />
 			
 			<Merch />
+
+			<Social />
+			
+			<Reviews />
 		</div>
     );
 }
