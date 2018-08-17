@@ -36,9 +36,9 @@ class Schedule extends Component {
     return (
     	<div>
 	    	<section id="schedule">
-		    	<div className="container pt-5 pb-5">
-					<h1 className="text-white text-center m-5">РАСПИСАНИЕ СТРИМОВ</h1>
-					<img src="shedule.png" className="img-fluid mb-5" alt="" />
+		    	<div className="container pt-5 pb-5  text-center">
+					<h1 className="text-white m-5">РАСПИСАНИЕ СТРИМОВ</h1>
+					<img src="shedule.jpg" className="img-fluid mb-5" alt="" />
 			    	<div id="nextGame" className=" text-center text-white">
 			    		<h1>ДО СЛЕДУЮЩЕЙ ИГРЫ ОСТАЛОСЬ:</h1><br /> 
 			    		<h2  className="display-4">{this.date()}</h2>

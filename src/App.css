@@ -62,17 +62,11 @@ button
 }
 .bg-Nav
 {
-    background: url(nav.png) no-repeat;
+    background: url(nav.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
-header
-{
-    background: url(bg-1.jpeg) no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
+
 
 #content
 {
@@ -84,13 +78,7 @@ header
     height: 600px;
 }
 
-.header_works
-{
-    background: url(bg-1.jpeg) no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
+
 
 .header_works__head_name
 {
