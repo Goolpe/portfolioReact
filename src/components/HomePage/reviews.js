@@ -32,9 +32,9 @@ function Reviews(props){
 		const reviews = reviewsItems.map((thing) =>
 			<div className={thing.id == 0 ? "active carousel-item" : "carousel-item"} key={thing.id} >
 		      <div className="card">
-				  <div class="row">
-				  	<div class="col-3"><img className="card-img-top" src={thing.url} alt="Card image cap" /></div>
-				  	<div class="col">
+				  <div className="row">
+				  	<div className="col-3"><img className="card-img-top" src={thing.url} alt="Card image cap" /></div>
+				  	<div className="col">
 				  		<div className="card-body">
 				    		<p className="card-text">{thing.text}</p>
 				    		<h2>{thing.name}</h2>
@@ -47,7 +47,7 @@ function Reviews(props){
     return (
 	    	<section id="reviews" className="pb-5 pt-5">
 	    		<div id="carouselControls" data-interval="3000" className="carousel slide" data-ride="carousel">
-	    		<div class="container text-center">
+	    		<div className="container text-center">
 				<h1 className="text-center m-5">ОТЗЫВЫ</h1>
 					
 					  <div className="carousel-inner text-left">
