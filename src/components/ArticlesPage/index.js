@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import {
-	BrowserRouter as Router,
-    Route,
     Link,
-    Switch,
-    Redirect
 } from 'react-router-dom';
 import articles from "./articles.json";
 
@@ -19,7 +15,7 @@ class ArticlesPage extends Component {
     window.scrollTo(0,0);
   }
   render() {
-	  const listItems = articles.map((article) =>
+	  const listItems = articles.map((article, index) =>
 	    	<div className="card mb-5" key={article.id}>
 			  	<div className="card-body">
 			  		<div className="row">
@@ -29,7 +25,7 @@ class ArticlesPage extends Component {
 			  			<div className="col">
 			  				<h5 className="card-title">{article.name}</h5>
 						    <p className="card-text ">{article.text}</p>
-						    <Link to="/articles" className="btn btn-info">Читать дальше</Link>
+						    <Link to={`/article/${index}`} className="btn btn-info">Читать дальше</Link>
 						</div>
 			  		</div>
 			  		

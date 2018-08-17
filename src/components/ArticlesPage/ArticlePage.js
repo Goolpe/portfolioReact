@@ -1,24 +1,28 @@
-import React from 'react';
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Switch,
-    Redirect
-  } from 'react-router-dom';
+import React, { Component } from 'react';
 import articles from "./articles.json";
 
-function ArticlePage (props,match){
-    return (
-	    	<div className="container-fluid " id="articles">
-	    		<div className="row text-white">
-	    		<div className="card mb-5">
-						<div className="card-header">
-					  	</div>
-					</div>
-	    		</div>
-	    	</div>
-    );
+class ArticlePage extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+
+    }
+  }
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+  render() {
+  	const id = this.props.match.params.id;
+	  return (
+	  <section id="articlesPage">	  
+	  	<div className="container mt-5 mb-5">
+	  	<h1 className="text-center m-5">{articles[id].name}</h1>
+	  		
+    		{articles[id].text}
+    	</div>
+    	</section>
+	  );
+	}
 }
 
 export default ArticlePage;

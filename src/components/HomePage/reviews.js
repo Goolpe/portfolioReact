@@ -30,10 +30,10 @@ function Reviews(props){
 			name: "Джон Уик"
 		}]
 		const reviews = reviewsItems.map((thing) =>
-			<div className={thing.id == 0 ? "active carousel-item" : "carousel-item"} key={thing.id} >
+			<div className={thing.id === 0 ? "active carousel-item" : "carousel-item"} key={thing.id} >
 		      <div className="card">
 				  <div className="row">
-				  	<div className="col-3"><img className="card-img-top" src={thing.url} alt="Card image cap" /></div>
+				  	<div className="col-3"><img className="card-img-top" src={thing.url} alt={thing.name} /></div>
 				  	<div className="col">
 				  		<div className="card-body">
 				    		<p className="card-text">{thing.text}</p>

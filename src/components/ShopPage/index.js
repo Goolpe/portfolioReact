@@ -1,7 +1,4 @@
 import React from 'react';
-import {
-  Link
-} from 'react-router-dom';
 import shop from "./shop.json"
 
 function ShopPage(props){
@@ -15,7 +12,7 @@ function ShopPage(props){
 					    <li className="list-group-item">{thing.price}</li>
 					</ul>
 					<br />
-				    <a href="#" className="btn btn-secondary">Заказать</a>
+				    <a href="#home" className="btn btn-secondary">Заказать</a>
 				  </div>
 				</div>
 			</div>
