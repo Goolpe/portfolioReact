@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   Link
 } from 'react-router-dom';
 
-class Arts extends Component {
-	constructor(props){
-		super(props);
-	}
-  render() {
+function Arts (props){
     return (
 	    	<section id="arts">
 	    		<div className="container-fluid text-white">
@@ -56,7 +52,6 @@ class Arts extends Component {
 				
 	    	</section>
     );
-  }
 }
 
 export default Arts;

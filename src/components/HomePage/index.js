@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import News from './news';
 import Schedule from './schedule';
 import Arts from './arts';
 import Merch from './merch';
 
 
-class HomePage extends Component {
-	constructor(props){
-		super(props);
-	}
-  render() {
+function HomePage(props){
     return (
     	<div>
 	    	<div id="header" className="carousel slide" data-interval="3000" data-ride="carousel">
@@ -43,7 +39,6 @@ class HomePage extends Component {
 			<Merch />
 		</div>
     );
-  }
 }
 
 export default HomePage;

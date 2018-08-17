@@ -1,10 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Merch extends Component {
-	constructor(props){
-		super(props);
-	}
-  render() {
+function Merch(props){
     return (
 	    	<section id="merch">
 	    		<div className="container pt-5 pb-5">
@@ -12,7 +8,7 @@ class Merch extends Component {
 					<div className="row">
 						<div className="col-4">
 							<div className="card text-center">
-							  <img className="card-img-top" src="https://pp.userapi.com/c846321/v846321544/ac221/5xft3axiWoM.jpg" alt="Card image cap" />
+							  <img className="card-img-top" src="https://pp.userapi.com/c846321/v846321544/ac221/5xft3axiWoM.jpg" alt="Футболка1" />
 							  <div className="card-body">
 							    <h5 className="card-title">Футболка RR #1</h5>
 							    <ul className="list-group list-group-flush">
@@ -25,7 +21,7 @@ class Merch extends Component {
 						</div>
 						<div className="col-4">
 							<div className="card text-center">
-							  <img className="card-img-top" src="https://pp.userapi.com/c849416/v849416544/3a309/oEt7ZyDAIik.jpg" alt="Card image cap" />
+							  <img className="card-img-top" src="https://pp.userapi.com/c849416/v849416544/3a309/oEt7ZyDAIik.jpg" alt="Футболка2" />
 							  <div className="card-body">
 							    <h5 className="card-title">Футболка RR #2</h5>
 							    <ul className="list-group list-group-flush">
@@ -38,7 +34,7 @@ class Merch extends Component {
 						</div>
 						<div className="col-4">
 							<div className="card text-center">
-							  <img className="card-img-top" src="https://pp.userapi.com/c846420/v846420544/a9bc2/AtnhRYckCwo.jpg" alt="Card image cap" />
+							  <img className="card-img-top" src="https://pp.userapi.com/c846420/v846420544/a9bc2/AtnhRYckCwo.jpg" alt="Чехол" />
 							  <div className="card-body">
 							    <h5 className="card-title">Чехол для телефона</h5>
 							    <ul className="list-group list-group-flush">
@@ -53,7 +49,6 @@ class Merch extends Component {
 				</div>
 	    	</section>
     );
-  }
 }
 
 export default Merch;
