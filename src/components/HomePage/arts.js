@@ -7,30 +7,30 @@ function Arts (props){
 	const artsMems = [{
 		id:1,
 		url: "https://pp.userapi.com/c846522/v846522612/2cc67/Tpri9nQ03dM.jpg",
-		link: "",
+		link: "/art",
 		name: "АРТ"
 	},
 	{
 		id:2,
 		url: "https://pp.userapi.com/c841234/v841234068/248de/-NbfkIst47I.jpg",
-		link: "",
+		link: "/masters",
 		name: "РЕЗЮМЕ МАСТЕРОВ"
 	},
 	{
 		id:3,
 		url: "https://pp.userapi.com/c844321/v844321415/d617/VvyY4yxfLQc.jpg",
-		link: "",
+		link: "/articles",
 		name: "СТАТЬИ"
 	},
 	{
 		id:4,
 		url: "https://pp.userapi.com/c845421/v845421486/b4c46/KW2bbOiQsWY.jpg",
-		link: "",
+		link: "/streams",
 		name: "СТРИМЫ"
 	}]
 	const arts = artsMems.map((thing) =>
 		<div className="col-6 p-0" key={thing.id}>
-			<Link to="/art" className="text-white">
+			<Link to={thing.link} className="text-white">
 			<div className="wrapper" style={ { backgroundImage: `url(${thing.url})` } }>
 				<div className="card rounded-0 border-0" >
 			  		<div className="card-body font-weight-bold pl-0">

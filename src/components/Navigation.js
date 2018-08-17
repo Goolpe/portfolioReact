@@ -44,6 +44,7 @@ class Navigation extends Component{
 
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <Link to="/library" className="dropdown-item">БИБЛИОТЕКА</Link>
+                  <Link to="/masters" className="dropdown-item">РЕЗЮМЕ МАСТЕРОВ</Link>
                   <Link to="/art" className="dropdown-item">АРТ</Link>
                   <Link to="/library" className="dropdown-item">ДОКУМЕНТЫ</Link>
                   <Link to="/library" className="dropdown-item">ОБЪЯВЛЕНИЯ</Link>
