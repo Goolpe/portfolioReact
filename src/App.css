@@ -1,3 +1,17 @@
+@font-face
+{
+    font-family: Albertusfont;
+
+    src: url(Albertusfont.otf);
+}
+
+body
+{
+    font-family: Albertusfont !important;
+    font-weight: 200 !important;
+
+    letter-spacing: 1px;
+}
 @-webkit-keyframes move
 {
     from
@@ -26,27 +40,31 @@
     }
 }
 
-ul{
-  padding: 0;
+ul
+{
+    padding: 0;
 }
 
 button
 {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 
-.navbar .container{
+.navbar .container
+{
     padding: 0;
 }
 
-.navbar-brand img{
-    height:60px;
+.navbar-brand img
+{
+    height: 60px;
 }
-.bg-Nav{
-  background: url(nav.png) no-repeat;
-  background-position: center;
-  background-size: cover;
+.bg-Nav
+{
+    background: url(nav.png) no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 header
 {
@@ -56,16 +74,18 @@ header
     background-size: cover;
 }
 
-#content{
-  padding-top: 80px;  
+#content
+{
+    padding-top: 80px;
 }
 
-.carousel-item{
-
-    height:600px;
+.carousel-item
+{
+    height: 600px;
 }
 
-.header_works{
+.header_works
+{
     background: url(bg-1.jpeg) no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -89,35 +109,61 @@ header
     padding-top: 250px;
 }
 
-#news{
-  background-color: #20232c;
+#articles
+{
+    background-color: #20232c;
 }
 
-#news .card{
-  background-size: cover;
-  background: no-repeat;
-  background-position: top left;
+#articles .card
+{
+    background: no-repeat;
+    background-position: top left;
+    background-size: cover;
 }
 
-#schedule{
-  background-color: #20232c;
+#articlesPage .card-body img
+{
+    width: 100%;
+}
+#schedule
+{
+    background-color: #20232c;
 }
 
-#arts .card{
-  height:50vh;
-  background: no-repeat;
-  background-position: top;
-  background-size: cover;
-  transition: 1s;
-  cursor: pointer;
+#arts .wrapper
+{
+    background: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 50vh;
 }
 
-#arts .card h1{
-  width:200px;
+#arts .wrapper:hover .card
+{
+    background: rgba(0,0,0,0.5);
 }
-.form-inline .form-control{
-  width:700px !important;
+#arts .card
+{
+    height: 50vh;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.5s;
 }
-footer{
-  background-color: #000;
+#arts .text-white
+{
+    text-decoration: none;
+}
+
+#arts .card h1
+{
+    width: 250px;
+}
+
+.form-inline .form-control
+{
+    width: 700px !important;
+}
+footer
+{
+    background-color: #000;
 }

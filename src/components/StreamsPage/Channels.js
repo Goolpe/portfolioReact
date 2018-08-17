@@ -1,25 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Link
 } from 'react-router-dom';
 
-function Channels(props){
+class Channels extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+
+    }
+  }
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+  render(){
     return (
     	<section id="channels">
 	    	<div className="container-fluid">
-				<div class="row">
-					<div class="col-6 bg-danger text-center pb-5">
+				<div className="row">
+					<div className="col-6 bg-danger text-center pb-5">
 				    		<h1 className="mt-5 text-white"><i className="fab fa-youtube"></i> YOUTUBE</h1>
-				    		<iframe width="70%" height="340" src="http://www.youtube.com/embed?max-results=1&controls=1&rel=0&listType=user_uploads&list=objectivitytime" frameborder="0" allowfullscreen></iframe>
+				    		<iframe width="70%" height="340" src="http://www.youtube.com/embed?max-results=1&rel=0&listType=user_uploads&list=objectivitytime" frameBorder="0" allowFullScreen></iframe>
 						</div>
 
-					<div class="col-6 bg-info text-center  pb-5" >
+					<div className="col-6 bg-info text-center  pb-5" >
 				    		<h1 className="mt-5 text-white"><i className="fab fa-twitch"></i> TWITCH</h1>
 				    		<iframe
 							    src="http://player.twitch.tv/?channel=random_rules"
-							    width="70%" height="340"
-							    frameborder="0"
-							    allowfullscreen>
+							    width="70%" 
+							    height="340"
+							    frameBorder="0"
+							    allowFullScreen>
 							</iframe>
 		    		</div>
 				</div>
@@ -27,5 +38,5 @@ function Channels(props){
 	    </section>
     );
 }
-
+}
 export default Channels;

@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 import AboutProject from './components/AboutProject';
 import LibraryPage from './components/LibraryPage';
 import ArtPage from './components/ArtPage';
-import NewsPage from './components/NewsPage';
+import ArticlesPage from './components/ArticlesPage';
 import ShopPage from './components/ShopPage';
 import StreamsPage from './components/StreamsPage';
 
@@ -36,7 +36,7 @@ class App extends Component {
           <Route path="/about-project" component={AboutProject} />
           <Route path="/library" component={LibraryPage} />
           <Route path="/art" component={ArtPage} />
-          <Route path="/news" component={NewsPage} />
+          <Route path="/articles" component={ArticlesPage} />
           <Route path="/shop" component={ShopPage} />
           <Route path="/streams" component={StreamsPage} />
         </section>

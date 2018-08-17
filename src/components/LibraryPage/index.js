@@ -1,6 +1,14 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-function LibraryPage(props){
+
+class LibraryPage extends Component{
+  constructor(props){
+    super(props);
+  }
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+  render(){	
     return (
     	<div>
     		<div className="container mt-5 mb-5">
@@ -34,6 +42,7 @@ function LibraryPage(props){
 			</div>
 		</div>
     );
+}
 }
 
 export default LibraryPage;

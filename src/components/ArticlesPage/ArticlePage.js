@@ -6,11 +6,11 @@ import {
     Switch,
     Redirect
   } from 'react-router-dom';
-import articles from "./news.json";
+import articles from "./articles.json";
 
 function ArticlePage (props,match){
     return (
-	    	<div className="container-fluid " id="news">
+	    	<div className="container-fluid " id="articles">
 	    		<div className="row text-white">
 	    		<div className="card mb-5">
 						<div className="card-header">

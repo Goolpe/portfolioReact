@@ -1,11 +1,21 @@
-import React from 'react';
-import News from './news';
+import React, { Component } from 'react';
+import Articles from './articles';
 import Schedule from './schedule';
 import Arts from './arts';
 import Merch from './merch';
 
 
-function HomePage(props){
+class HomePage extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+
+    }
+  }
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+  render(){
     return (
     	<div>
 	    	<div id="header" className="carousel slide" data-interval="3000" data-ride="carousel">
@@ -30,7 +40,7 @@ function HomePage(props){
 			  </a>
 			</div>
 
-			<News />
+			<Articles />
 			
 			<Schedule className="pt-5"/>
 
@@ -40,5 +50,5 @@ function HomePage(props){
 		</div>
     );
 }
-
+}
 export default HomePage;

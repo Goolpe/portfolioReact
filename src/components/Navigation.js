@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 import {
   Link
 } from 'react-router-dom'
@@ -44,21 +44,19 @@ class Navigation extends Component{
 
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <Link to="/library" className="dropdown-item">БИБЛИОТЕКА</Link>
-                  <Link to="/art" className="dropdown-item">АРТ/МЕМЫ</Link>
-                  <Link to="/library" className="dropdown-item">ПЛАТНЫЕ ИГРЫ</Link>
+                  <Link to="/art" className="dropdown-item">АРТ | МЕМЫ</Link>
                   <Link to="/library" className="dropdown-item">ДОКУМЕНТЫ</Link>
                   <Link to="/library" className="dropdown-item">ОБЪЯВЛЕНИЯ</Link>
                   <Link to="/library" className="dropdown-item">ОПРОСЫ</Link>
-                  <Link to="/library" className="dropdown-item">ПЕРЕВОДЫ</Link>
-                  <Link to="/library" className="dropdown-item">СТАТЬИ</Link>
-                  <Link to="/library" className="dropdown-item">РЕЗЮМЕ</Link>
+                  <Link to="/library" className="dropdown-item">ПЛАТНЫЕ ИГРЫ</Link>
+                  <Link to="/library" className="dropdown-item">ВАКАНСИИ</Link>
                 </div>
               </li>
               <li className="nav-item">
                 <Link to="/streams" className="nav-link text-white">СТРИМЫ</Link>
               </li>
               <li className="nav-item">
-                <Link to="/news" className="nav-link text-white">НОВОСТИ</Link>
+                <Link to="/articles" className="nav-link text-white">СТАТЬИ</Link>
               </li>
               <li className="nav-item mr-2">
                 <Link to="/shop" className="nav-link text-white btn btn-danger rounded">МАГАЗИН</Link>
