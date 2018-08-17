@@ -43,7 +43,11 @@ button
 .navbar-brand img{
     height:60px;
 }
-
+.bg-Nav{
+  background: url(nav.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 header
 {
     background: url(bg-1.jpeg) no-repeat;
@@ -92,7 +96,7 @@ header
 #news .card{
   background-size: cover;
   background: no-repeat;
-  background-position: center;
+  background-position: top left;
 }
 
 #schedule{
