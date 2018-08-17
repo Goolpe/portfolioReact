@@ -7,7 +7,6 @@ import {
     Redirect
 } from 'react-router-dom';
 import articles from "./news.json";
-import ArticlePage from './ArticlePage';
 
 class NewsPage extends Component {
   constructor(props){
@@ -25,7 +24,7 @@ class NewsPage extends Component {
 			  	<div className="card-body">
 				    <h5 className="card-title">{article.name}</h5>
 				    <p className="card-text">{article.text}</p>
-				    <Link to={`/news/${article.id}`}>Подробнее</Link>
+				    <Link to="/news">Подробнее</Link>
 			  	</div>
 			</div>
 	  );

@@ -32,7 +32,7 @@ function HomePage(props){
 
 			<News />
 			
-			<Schedule />
+			<Schedule className="pt-5"/>
 
 			<Arts />
 			

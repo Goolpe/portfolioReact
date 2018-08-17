@@ -58,7 +58,7 @@ header
 
 .carousel-item{
 
-    height:800px;
+    height:600px;
 }
 
 .header_works{
@@ -86,8 +86,7 @@ header
 }
 
 #news{
-  position: absolute;
-  margin-top:-100px;
+  background-color: #20232c;
 }
 
 #news .card{
@@ -95,8 +94,8 @@ header
   background: no-repeat;
   background-position: center;
 }
+
 #schedule{
-  padding-top: 150px;
   background-color: #20232c;
 }
 

@@ -4,27 +4,33 @@ import {
 } from 'react-router-dom';
 import shop from "./shop.json"
 
-function NewsPage(props){
-	  const listItems = articles.map((article) =>
-	    	<div className="card mb-5" key={article.id}>
-				<div className="card-header">
-			    	{article.date}
-			  	</div>
-			  	<div className="card-body">
-				    <h5 className="card-title">{article.name}</h5>
-				    <p className="card-text">{article.text}</p>
-				    <Link to="/news" className="btn btn-primary">Подробнее</Link>
-			  	</div>
+function ShopPage(props){
+	  const listItems = shop.map((thing) =>
+	    	<div className="col-4" key={thing.id}>
+				<div className="card text-center">
+				  <img className="card-img-top" src={thing.picture} alt={thing.title} />
+				  <div className="card-body">
+				    <h5 className="card-title">{thing.title}</h5>
+				    <ul className="list-group list-group-flush">
+					    <li className="list-group-item">{thing.price}</li>
+					</ul>
+					<br />
+				    <a href="#" className="btn btn-secondary">Заказать</a>
+				  </div>
+				</div>
 			</div>
 	  );
 	  return (
-    	<div className="container mt-5 mb-5">
-    		<h1 className="text-center m-5">НОВОСТИ</h1>
-    		<ul>{listItems}</ul>
-    	</div>
-	    
+    	<section id="merch">
+	    		<div className="container pt-5 pb-5">
+					<h1 className="text-dark text-center m-5">Мерч Random Rules</h1>
+					<div className="row">
+						{listItems}
+					</div>
+				</div>
+	    	</section>
 	  );
 	}
 
-export default NewsPage;
+export default ShopPage;
 

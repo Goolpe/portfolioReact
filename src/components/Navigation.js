@@ -61,7 +61,7 @@ class Navigation extends Component{
                 <Link to="/news" className="nav-link text-white">НОВОСТИ</Link>
               </li>
               <li className="nav-item mr-2">
-                <a href="#merch" className="nav-link text-white btn btn-danger rounded">МАГАЗИН</a>
+                <Link to="/shop" className="nav-link text-white btn btn-danger rounded">МАГАЗИН</Link>
               </li>
                <button onClick={()=> this.setState({search: !this.state.search})} className="btn btn-outline-light my-2 my-sm-0" type="submit"><i className="fas fa-search"></i>
               </button>

@@ -19,11 +19,10 @@ function News(props){
 					</div>
 				).slice(0,4);
     return (
-	    	<div className="container-fluid " id="news">
+	    	<div className="container-fluid pt-5" id="news">
 				<p className="text-white font-weight-bold">ПОСЛЕДНИЕ НОВОСТИ | <Link to="/news" className="text-success">Все новости</Link></p>
-
 	    		<div className="row text-white">
-	    		{listItems}
+	    			{listItems}
 	    		</div>
 	    	</div>
     );
