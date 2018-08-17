@@ -34,7 +34,7 @@ function Arts (props){
 			<div className="wrapper" style={ { backgroundImage: `url(${thing.url})` } }>
 				<div className="card rounded-0 border-0" >
 			  		<div className="card-body font-weight-bold pl-0">
-				    	<h1 className="card-subtitle mt-5 mb-2 pl-3">{thing.name}</h1>
+				    	<h1 className="card-subtitle mt-5 mb-2 pl-3" style={{textShadow: 'black 0 0 5px'}}>{thing.name}</h1>
 			  		</div>
 				</div>
 			</div>	
