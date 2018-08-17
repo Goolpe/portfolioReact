@@ -3,10 +3,14 @@ import {
   Link
 } from 'react-router-dom';
 import Schedule from '../HomePage/schedule';
+import Channels from './Channels';
 
 function StreamsPage(props){
 	  return (
-    	<Schedule />
+	  	<div>
+		  	<Channels />
+	    	<Schedule />
+    	</div>
 	  );
 	}
 
