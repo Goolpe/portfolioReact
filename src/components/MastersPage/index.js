@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import mastersJSON from "./mastersJSON.json"
 
-function Masters(props){
+class Masters extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
 
+    }
+  }
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+  render(){
 	const masters = mastersJSON.map((thing) =>
 			<div className="card" key={thing.id}>
 			    <div className="card-header" id={"heading" + thing.id}>
@@ -52,6 +61,7 @@ function Masters(props){
 				</div>
 	    	</section>
     );
+}
 }
 
 export default Masters;
