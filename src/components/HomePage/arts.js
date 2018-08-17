@@ -12,9 +12,9 @@ function Arts (props){
 	},
 	{
 		id:2,
-		url: "https://pp.userapi.com/c837530/v837530537/410cc/1AFuRcHunJQ.jpg",
+		url: "https://pp.userapi.com/c841234/v841234068/248de/-NbfkIst47I.jpg",
 		link: "",
-		name: "МЕМЫ"
+		name: "РЕЗЮМЕ МАСТЕРОВ"
 	},
 	{
 		id:3,

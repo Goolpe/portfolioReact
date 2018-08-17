@@ -20,13 +20,13 @@ class Channels extends Component {
 				<div className="row">
 					<div className="col-6 bg-danger text-center pb-5">
 				    		<h1 className="mt-5 text-white"><i className="fab fa-youtube"></i> YOUTUBE</h1>
-				    		<iframe width="70%" height="340" src="http://www.youtube.com/embed?max-results=1&rel=0&listType=user_uploads&list=objectivitytime" frameBorder="0" allowFullScreen></iframe>
+				    		<iframe width="70%" height="340" src="https://www.youtube.com/embed?max-results=1&rel=0&listType=user_uploads&list=objectivitytime" frameBorder="0" allowFullScreen></iframe>
 						</div>
 
 					<div className="col-6 bg-info text-center  pb-5" >
 				    		<h1 className="mt-5 text-white"><i className="fab fa-twitch"></i> TWITCH</h1>
 				    		<iframe
-							    src="http://player.twitch.tv/?channel=random_rules"
+							    src="https://player.twitch.tv/?channel=random_rules"
 							    width="70%" 
 							    height="340"
 							    frameBorder="0"
