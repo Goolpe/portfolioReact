@@ -15,6 +15,7 @@ import ArticlePage from './components/ArticlesPage/ArticlePage';
 import ShopPage from './components/ShopPage';
 import StreamsPage from './components/StreamsPage';
 import MastersPage from './components/MastersPage';
+import MasterPage from './components/MastersPage/MasterPage';
 
 import './App.css';
 
@@ -39,6 +40,7 @@ class App extends Component {
           <Route path="/shop" component={ShopPage} />
           <Route path="/streams" component={StreamsPage} />
           <Route path="/masters" component={MastersPage} />
+          <Route path="/master/:id" component={MasterPage} />
         </section>
         <Footer />
       </div>

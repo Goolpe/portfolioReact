@@ -170,6 +170,29 @@ button
   height: 300px;
 }
 
+#masters .wrapper
+{
+    background: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 400px;
+}
+
+#masters .wrapper:hover .card
+{
+    background: rgba(0,0,0,0.5);
+}
+#masters .card
+{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    transition: 0.5s;
+}
+#masters .text-white
+{
+    text-decoration: none;
+}
 .form-inline .form-control
 {
     width: 700px !important;
