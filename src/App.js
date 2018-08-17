@@ -11,6 +11,7 @@ import AboutProject from './components/AboutProject';
 import LibraryPage from './components/LibraryPage';
 import ArtPage from './components/ArtPage';
 import NewsPage from './components/NewsPage';
+import ArticlePage from './components/NewsPage/ArticlePage';
 
 import './App.css';
 
@@ -35,6 +36,7 @@ class App extends Component {
           <Route path="/library" component={LibraryPage} />
           <Route path="/art" component={ArtPage} />
           <Route path="/news" component={NewsPage} />
+         
         </section>
         <Footer />
       </div>

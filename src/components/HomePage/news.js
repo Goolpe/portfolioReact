@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 import articles from "../NewsPage/news.json"
 
 function News(props){
@@ -12,7 +12,8 @@ function News(props){
 							    <h6 className="card-subtitle mb-2">{article.date}</h6>
 							    <h5 className="card-title">{article.name}</h5>
 							    <p className="card-text">{article.text.slice(0,100)}</p>
-							    <Link to="/news" className="btn btn-primary">Подробнее</Link>
+							    <Link to={`/news/${article.id}`} className="btn btn-success">Подробнее</Link>
+
 						  	</div>
 						</div>	
 					</div>
@@ -24,7 +25,6 @@ function News(props){
 	    		<div className="row text-white">
 	    		{listItems}
 	    		</div>
-	    		
 	    	</div>
     );
 }
