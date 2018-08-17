@@ -14,7 +14,7 @@ class Navigation extends Component{
     return(
       <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark align-items-center">
         <div className="container">
-          <div className="navbar-brand"><img src="logo.png" /></div>
+          <Link to="/" className="navbar-brand"><img src="logo.png" /></Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -35,16 +35,16 @@ class Navigation extends Component{
                 </a>
 
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a className="dropdown-item" href="#">БИБЛИОТЕКА</a>
-                  <a className="dropdown-item" href="#">АРТЫ</a>
-                  <a className="dropdown-item" href="#">ДОКУМЕНТЫ</a>
-                  <a className="dropdown-item" href="#">МЕМЫ</a>
-                  <a className="dropdown-item" href="#">ОБЪЯВЛЕНИЯ</a>
-                  <a className="dropdown-item" href="#">ОПРОСЫ</a>
-                  <a className="dropdown-item" href="#">ПЕРЕВОДЫ</a>
-                  <a className="dropdown-item" href="#">СТАТЬИ</a>
-                  <a className="dropdown-item" href="#">СТРИМЫ</a>
-                  <a className="dropdown-item" href="#">РЕЗЮМЕ</a>
+                  <Link to="/library" className="dropdown-item">БИБЛИОТЕКА</Link>
+                  <Link to="/art" className="dropdown-item">АРТ</Link>
+                  <Link to="/art" className="dropdown-item">МЕМЫ</Link>
+                  <Link to="/library" className="dropdown-item">СТРИМЫ</Link>
+                  <Link to="/library" className="dropdown-item">ДОКУМЕНТЫ</Link>
+                  <Link to="/library" className="dropdown-item">ОБЪЯВЛЕНИЯ</Link>
+                  <Link to="/library" className="dropdown-item">ОПРОСЫ</Link>
+                  <Link to="/library" className="dropdown-item">ПЕРЕВОДЫ</Link>
+                  <Link to="/library" className="dropdown-item">СТАТЬИ</Link>
+                  <Link to="/library" className="dropdown-item">РЕЗЮМЕ</Link>
                 </div>
               </li>
               <li className="nav-item">

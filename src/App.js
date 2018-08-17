@@ -9,6 +9,8 @@ import HomePage from './components/HomePage';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import AboutProject from './components/AboutProject';
+import LibraryPage from './components/LibraryPage';
+import ArtPage from './components/ArtPage';
 
 import './App.css';
 
@@ -16,8 +18,6 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      aboutP : false,
-      homeP : true
     }
   }
   render() {
@@ -32,6 +32,8 @@ class App extends Component {
         <section id="content">
           <Route path="/" exact={true} component={HomePage} />
           <Route path="/about-project" component={AboutProject} />
+          <Route path="/library" component={LibraryPage} />
+          <Route path="/art" component={ArtPage} />
         </section>
         <Footer />
       </div>
