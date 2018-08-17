@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import AboutProject from './components/AboutProject';
 import LibraryPage from './components/LibraryPage';
 import ArtPage from './components/ArtPage';
+import NewsPage from './components/NewsPage';
 
 import './App.css';
 
@@ -34,6 +35,7 @@ class App extends Component {
           <Route path="/about-project" component={AboutProject} />
           <Route path="/library" component={LibraryPage} />
           <Route path="/art" component={ArtPage} />
+          <Route path="/news" component={NewsPage} />
         </section>
         <Footer />
       </div>
