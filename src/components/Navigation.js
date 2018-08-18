@@ -12,7 +12,7 @@ class Navigation extends Component{
   }
   render(){
     return(
-      <header className="header_works">
+      <div className="header_works">
           <div className="header__wrapper">
       <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-Nav shadow align-items-center">
         <div className="container">
@@ -72,7 +72,7 @@ class Navigation extends Component{
         </div>
       </nav>
                 </div>
-        </header>
+        </div>
     )
   }
 }

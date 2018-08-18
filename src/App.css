@@ -184,7 +184,7 @@ button
 #masters .wrapper
 {
     height: 400px;
-
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); 
     background: no-repeat;
     background-position: top;
     background-size: cover;
@@ -192,8 +192,17 @@ button
 
 #masters .wrapper:hover .card
 {
-    background: rgba(0,0,0,.6);
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    transition: .5s;
 }
+
+#masters .wrapper:hover
+{
+    transition: .5s;
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
 #masters .card
 {
     width: 100%;
