@@ -17,15 +17,14 @@ class MasterPage extends Component {
   render() {
   	const id = parseInt(this.props.match.params.id.replace(/\D+/g,""));
     const masterYoutube = mastersJSON[id].examples.map((example, index) => 
-      <div class="col-6 mb-3">
+      <div className="col-6 mb-3" key={index}>
         <iframe
           title={mastersJSON[id].skype}
             src={example}
             width="100%" 
             height="340"
             frameBorder="0"
-            allowFullScreen
-            key={index}>
+            allowFullScreen>
         </iframe>
       </div>
     )
