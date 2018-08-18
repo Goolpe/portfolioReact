@@ -9,7 +9,7 @@
 		"paidGames": true,
 		"systems": "Dungeons & Dragons 5-й редакции.",
 		"setting": "Forgotten Realms, Ведьмак, Авторские.",
-		"example": "https://www.youtube.com/embed/ZjY-c5wzEwc",
+		"examples": ["https://www.youtube.com/embed/ZjY-c5wzEwc"],
 		"picture": "https://pp.userapi.com/JnDn-027DAc_aC3izpKPPm_LEm4ncXbDMKhE6Q/Uddfv288Sbc.jpg"
 	},
 	{
@@ -22,7 +22,7 @@
 		"paidGames": true,
 		"systems": "Dungeons & Dragons 5-й редакции и всевозможные хоумрулы, основанные на ней; Fate Core; GURPS; Simplex.",
 		"setting": "Сеттинги таких игр как «Gothic», «Fallout». В основном предпочитаю более-менее современные или футуристичные, нежели фентези.",
-		"example": "https://www.youtube.com/embed/CfaEb8H6bpk",
+		"examples": ["https://www.youtube.com/embed/CfaEb8H6bpk","https://www.youtube.com/embed/GcNr7nOpQDo","https://www.youtube.com/embed/I5RmMzDXxBQ","https://www.youtube.com/embed/wcSb5kfraWo"],
 		"picture": "https://pp.userapi.com/c834402/v834402078/d2ee3/A9woiYgDrn4.jpg"
 	},
 	{
@@ -35,7 +35,7 @@
 		"paidGames": true,
 		"systems": "HotB, DnD 5e.",
 		"setting": "Разнообразные фентези, Forgotten Realms, TES, Gothic.",
-		"example": "https://www.youtube.com/embed/NVltLHn_y8o",
+		"examples": ["https://www.youtube.com/embed/NVltLHn_y8o","https://www.youtube.com/embed/O7J-pO5_xT0"],
 		"picture": "https://pp.userapi.com/c834402/v834402078/d2f85/JT-YPQ7G3eI.jpg"
 	},
 	{
@@ -48,7 +48,7 @@
 		"paidGames": false,
 		"systems": "DnD5e.",
 		"setting": "авторские. На данный момент основной сеттинг - ОСИ.",
-		"example": "https://www.youtube.com/embed/2qSTUsLQgBM",
+		"examples": ["https://www.youtube.com/embed/2qSTUsLQgBM","https://www.youtube.com/embed/J_iENFSE-fE"],
 		"picture": "https://pp.userapi.com/c834402/v834402078/d2faa/yfZrXpWlsyU.jpg"
 	},
 	{
@@ -61,7 +61,7 @@
 		"paidGames": false,
 		"systems": "DnD 5e.",
 		"setting": "Легенды Кархата.",
-		"example": "https://www.youtube.com/embed/NmOfBAJ2Zf0",
+		"examples": ["https://www.youtube.com/embed/NmOfBAJ2Zf0","https://www.youtube.com/embed/59GUDkhzhvk"],
 		"picture": "https://pp.userapi.com/c834402/v834402078/d3130/p6AJoD-qExw.jpg"
 	},
 	{
@@ -74,7 +74,7 @@
 		"paidGames": false,
 		"systems": "DnD 5e.",
 		"setting": "Последний восход (автор.), Хроники забытых (автор.), Dark souls.",
-		"example": "https://www.youtube.com/embed/hL7obgpnSFI",
+		"examples": ["https://www.youtube.com/embed/hL7obgpnSFI","https://www.youtube.com/embed/Vo2I7pCUjko"],
 		"picture": "https://pp.userapi.com/c824602/v824602253/c8f86/-34pEVwX5MY.jpg"
 	},
 	{
@@ -87,7 +87,7 @@
 		"paidGames": false,
 		"systems": "Numenera, Mongoose Traveller 1nd, Warhammer Fantasy 2nd, GURPS 4nd, Warhammer: Dark Heresy 1nd, DnD 4nd и 5nd, Vampire the Masquerade.",
 		"setting": "Ninth World, Planescape, Traveller, Warhammer Fantasy, Warhammer 40.000, Forgotten Realms, World of the Darkness.",
-		"example": "https://www.youtube.com/embed/7BeXRUhWR9E",
+		"examples": ["https://www.youtube.com/embed/7BeXRUhWR9E","https://www.youtube.com/embed/0DN17TPOSGM"],
 		"picture": "https://pp.userapi.com/c844723/v844723604/67c6a/Vqagit-5jx0.jpg"
 	}					
 ]
