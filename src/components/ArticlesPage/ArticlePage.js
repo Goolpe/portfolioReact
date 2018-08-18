@@ -20,7 +20,7 @@ class ArticlePage extends Component {
 	  <section id="articlesPage">	  
 	  	<div className="container mt-5 mb-5">
       <Link to="/articles" className="text-dark"><i className="text-dark fas fa-angle-left "></i> ВСЕ СТАТЬИ</Link>
-	  	<h1 className="text-center m-5">{articles[id].name}</h1>
+	  	<h1 className="text-center m-5">{articles[id].title}</h1>
 	  		
     		{articles[id].text}
     	</div>

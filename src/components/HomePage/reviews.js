@@ -3,8 +3,7 @@ import {
   Carousel,
   CarouselItem,
   CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
+  CarouselIndicators
 } from 'reactstrap';
 
 const items = [
@@ -110,8 +109,8 @@ class Reviews extends Component {
 	      >
 		        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
 		        {slides}
-		        <CarouselControl  onClickHandler={this.previous} />
-		        <CarouselControl  onClickHandler={this.next} />
+		        <CarouselControl direction="prev" onClickHandler={this.previous} />
+		        <CarouselControl direction="next" onClickHandler={this.next} />
 	      	</Carousel>
 
           </div>

@@ -13,7 +13,8 @@ class LibraryPage extends Component{
   render(){	
     return (
     	<section id="library">
-		</section>
+      
+		  </section>
     );
 }
 }

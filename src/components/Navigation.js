@@ -8,14 +8,21 @@ class Navigation extends Component{
   constructor(props){
     super(props);
     this.toggle = this.toggle.bind(this);
+    this.toggleLogin = this.toggleLogin.bind(this);
     this.state = {
       dropdownOpen: false,
+      dropdownLoginOpen: false,
       search: false
     };
   }
   toggle() {
     this.setState(prevState => ({
       dropdownOpen: !prevState.dropdownOpen
+    }));
+  };
+  toggleLogin() {
+    this.setState(prevState => ({
+      dropdownLoginOpen: !prevState.dropdownLoginOpen
     }));
   }
   render(){
@@ -52,14 +59,14 @@ class Navigation extends Component{
                     НАВИГАЦИЯ
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem><Link to="/library" className="dropdown-item">БИБЛИОТЕКА</Link></DropdownItem>
-                    <DropdownItem><Link to="/masters" className="dropdown-item">РЕЗЮМЕ МАСТЕРОВ</Link></DropdownItem>
-                    <DropdownItem><Link to="/art" className="dropdown-item">АРТ</Link></DropdownItem>
-                    <DropdownItem><Link to="/library" className="dropdown-item">ДОКУМЕНТЫ</Link></DropdownItem>
-                    <DropdownItem><Link to="/library" className="dropdown-item">ОБЪЯВЛЕНИЯ</Link></DropdownItem>
-                    <DropdownItem><Link to="/library" className="dropdown-item">ОПРОСЫ</Link></DropdownItem>
-                    <DropdownItem><Link to="/library" className="dropdown-item">ПЛАТНЫЕ ИГРЫ</Link></DropdownItem>
-                    <DropdownItem><Link to="/library" className="dropdown-item">ВАКАНСИИ</Link></DropdownItem>
+                    <DropdownItem><Link to="/library" className="pl-0 dropdown-item">БИБЛИОТЕКА</Link></DropdownItem>
+                    <DropdownItem><Link to="/masters" className="pl-0 dropdown-item">РЕЗЮМЕ МАСТЕРОВ</Link></DropdownItem>
+                    <DropdownItem><Link to="/art" className="pl-0 dropdown-item">АРТ</Link></DropdownItem>
+                    <DropdownItem><Link to="/library" className="pl-0 dropdown-item">ДОКУМЕНТЫ</Link></DropdownItem>
+                    <DropdownItem><Link to="/library" className="pl-0 dropdown-item">ОБЪЯВЛЕНИЯ</Link></DropdownItem>
+                    <DropdownItem><Link to="/library" className="pl-0 dropdown-item">ОПРОСЫ</Link></DropdownItem>
+                    <DropdownItem><Link to="/library" className="pl-0 dropdown-item">ПЛАТНЫЕ ИГРЫ</Link></DropdownItem>
+                    <DropdownItem><Link to="/library" className="pl-0 dropdown-item">ВАКАНСИИ</Link></DropdownItem>
                   </DropdownMenu>
               </Dropdown>
               <li className="nav-item">
@@ -68,11 +75,22 @@ class Navigation extends Component{
               <li className="nav-item">
                 <Link to="/articles" className="nav-link text-white">СТАТЬИ</Link>
               </li>
-              <li className="nav-item mr-2">
+              <li className="nav-item">
                 <Link to="/shop" className="nav-link text-white btn btn-danger rounded">МАГАЗИН</Link>
               </li>
-               <button onClick={()=> this.setState({search: !this.state.search})} className="btn btn-outline-light my-2 my-sm-0" type="submit"><i className="fas fa-search"></i>
-              </button>
+              {/*<button onClick={()=> this.setState({search: !this.state.search})} className="btn btn-outline-light my-2 my-sm-0" type="submit">
+                <i className="fas fa-search"></i>
+              </button> */}
+              
+              <Dropdown isOpen={this.state.dropdownLoginOpen} toggle={this.toggleLogin}>
+                  <DropdownToggle className="ml-2 bg-transparent border-0">
+                    <i className="fas fa-sign-in-alt fa-2x"></i>
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem><Link to="/registration" className="pl-0 dropdown-item">Регистрация</Link></DropdownItem>
+                    <DropdownItem><Link to="/login" className="pl-0 dropdown-item">Вход</Link></DropdownItem>
+                  </DropdownMenu>
+              </Dropdown>
             </ul>
             }
           </div>

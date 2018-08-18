@@ -20,7 +20,7 @@ function ShopPage(props){
 	  return (
     	<section id="merch">
 	    		<div className="container pt-5 pb-5">
-					<h1 className="text-dark text-center m-5">Мерч Random Rules</h1>
+					<h1 className="text-dark text-center m-5">МЕРЧ RANDOM RULES</h1>
 					<div className="row">
 						{listItems}
 					</div>
