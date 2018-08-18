@@ -1,72 +1,122 @@
-import React from 'react';
+import React, {Component} from 'react';
+import {
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption
+} from 'reactstrap';
 
-function Reviews(props){
-	const reviewsItems = [{
-			id:0,
-			url: "http://sport1000.ru/wp-content/uploads/2018/06/1529640857_maxresdefault-800x445.jpg",
-			link: "",
-			text: "ВОСХИТИТЕЛЬНО, ДРУГ!",
-			name: "Джонни Депп"
-		},
-		{
-			id:1,
-			url: "https://pp.userapi.com/c841234/v841234068/248de/-NbfkIst47I.jpg",
-			link: "",
-			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias explicabo, perspiciatis voluptas magnam reiciendis necessitatibus facere neque quo ab reprehenderit fugiat adipisci aspernatur libero quos excepturi, cum veniam aut ipsum.",
-			name: "Сергей Брин"
-		},
-		{
-			id:2,
-			url: "https://pp.userapi.com/c844321/v844321415/d617/VvyY4yxfLQc.jpg",
-			link: "",
-			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, perspiciatis quod illum quas vel optio molestiae magnam! Dolorum labore iste, laboriosam debitis doloremque eveniet similique deleniti qui. Eos sint, illo.",
-			name: "Человек Паук"
-		},
-		{
-			id:3,
-			url: "https://pp.userapi.com/c845421/v845421486/b4c46/KW2bbOiQsWY.jpg",
-			link: "",
-			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ea ipsa sed consectetur nihil, esse ex blanditiis reprehenderit! Repellendus officia, aliquid reiciendis modi architecto quaerat quisquam accusamus! Corporis, delectus sunt.",
-			name: "Джон Уик"
-		}]
-		const reviews = reviewsItems.map((thing) =>
-			<div className={thing.id === 0 ? "active carousel-item" : "carousel-item"} key={thing.id} >
-		      <div className="card">
-				  <div className="row">
-				  	<div className="col-3"><img className="card-img-top" src={thing.url} alt={thing.name} /></div>
-				  	<div className="col">
-				  		<div className="card-body">
-				    		<p className="card-text">{thing.text}</p>
-				    		<h2>{thing.name}</h2>
-				  		</div>
-					</div>
-				  </div>
-				</div>
-		    </div>
-			)
+const items = [
+  {
+		id:0,
+		src: "http://sport1000.ru/wp-content/uploads/2018/06/1529640857_maxresdefault-800x445.jpg",
+		altText: "1",
+		text: "ВОСХИТИТЕЛЬНО, ДРУГ!",
+		name: "Джонни Депп"
+	},
+	{
+		id:1,
+		src: "https://pp.userapi.com/c841234/v841234068/248de/-NbfkIst47I.jpg",
+		altText: "2",
+		text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias explicabo, perspiciatis voluptas magnam reiciendis necessitatibus facere neque quo ab reprehenderit fugiat adipisci aspernatur libero quos excepturi, cum veniam aut ipsum.",
+		name: "Сергей Брин"
+	},
+	{
+		id:2,
+		src: "https://pp.userapi.com/c844321/v844321415/d617/VvyY4yxfLQc.jpg",
+		altText: "3",
+		text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, perspiciatis quod illum quas vel optio molestiae magnam! Dolorum labore iste, laboriosam debitis doloremque eveniet similique deleniti qui. Eos sint, illo.",
+		name: "Человек Паук"
+	},
+	{
+		id:3,
+		src: "https://pp.userapi.com/c845421/v845421486/b4c46/KW2bbOiQsWY.jpg",
+		altText: "4",
+		text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ea ipsa sed consectetur nihil, esse ex blanditiis reprehenderit! Repellendus officia, aliquid reiciendis modi architecto quaerat quisquam accusamus! Corporis, delectus sunt.",
+		name: "Джон Уик"
+	}
+]
+
+class Reviews extends Component {
+  constructor(props){
+    super(props);
+    this.state = { activeIndex: 0 };
+    this.next = this.next.bind(this);
+    this.previous = this.previous.bind(this);
+    this.goToIndex = this.goToIndex.bind(this);
+    this.onExiting = this.onExiting.bind(this);
+    this.onExited = this.onExited.bind(this);
+  }
+  onExiting() {
+    this.animating = true;
+  }
+
+  onExited() {
+    this.animating = false;
+  }
+
+  next() {
+    if (this.animating) return;
+    const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
+    this.setState({ activeIndex: nextIndex });
+  }
+
+  previous() {
+    if (this.animating) return;
+    const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
+    this.setState({ activeIndex: nextIndex });
+  }
+
+  goToIndex(newIndex) {
+    if (this.animating) return;
+    this.setState({ activeIndex: newIndex });
+  }
+  componentDidMount() {
+    window.scrollTo(0,0);
+    this.setState({ activeIndex: 0 });
+  }
+  
+  render(){
+    const { activeIndex } = this.state;
+
+    const slides = items.map((item) => 
+        <CarouselItem
+
+          onExiting={this.onExiting}
+          onExited={this.onExited}
+          key={item.src}
+        >
+          <div className="row">
+        		<div className="col-4"> <img src={item.src} className="img-fluid" alt={item.altText} /></div>
+        		<div className="col">
+              <div className="d-flex align-items-start flex-column bd-highlight" style={{height:"100%"}}>
+                <div className="bd-highlight mb-auto">{item.text} <br /></div>
+                <div className="bd-highlight"><h2>{item.name}</h2></div>
+              </div></div>
+            </div>
+        </CarouselItem>
+      );
     return (
-	    	<section id="reviews" className="pb-5 pt-5">
-	    		<div id="carouselControls" data-interval="3000" className="carousel slide" data-ride="carousel">
-	    		<div className="container text-center">
-				<h1 className="text-center m-5">ОТЗЫВЫ</h1>
-					
-					  <div className="carousel-inner text-left">
-					    	{reviews}
-					  </div>
-					  <a className="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-					    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-					    <span className="sr-only">Previous</span>
-					  </a>
-					  <a className="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-					    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-					    <span className="sr-only">Next</span>
-					  </a>
-					
-				<button className="btn btn-info p-3">ОСТАВИТЬ ОТЗЫВ</button>
-				</div>
-				</div>
-	    	</section>
+    	<div id="reviews">
+    		<h1 className="text-center m-5">ОТЗЫВЫ</h1>
+        <div className="container">
+          
+	    	<Carousel
+	        activeIndex={activeIndex}
+	        next={this.next}
+	        previous={this.previous}
+	        interval="2000"
+	      >
+		        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+		        {slides}
+		        <CarouselControl  onClickHandler={this.previous} />
+		        <CarouselControl  onClickHandler={this.next} />
+	      	</Carousel>
+
+          </div>
+	     </div>
     );
 }
-
+}
 export default Reviews;

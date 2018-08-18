@@ -5,42 +5,97 @@ import Arts from './arts';
 import Merch from './merch';
 import Reviews from './reviews';
 import Social from './social';
+import {
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption
+} from 'reactstrap';
+
+const items = [
+  {
+    src: 'headerBG.jpg',
+    altText: 'Slide 1',
+    caption: 'Slide 1'
+  },
+  {
+    src: 'headerBG2.jpg',
+    altText: 'Slide 2',
+    caption: 'Slide 2'
+  },
+  {
+    src: 'headerBG3.jpg',
+    altText: 'Slide 3',
+    caption: 'Slide 3'
+  }
+];
 
 class HomePage extends Component {
   constructor(props){
     super(props);
-    this.state = {
+    this.state = { activeIndex: 0 };
+    this.next = this.next.bind(this);
+    this.previous = this.previous.bind(this);
+    this.goToIndex = this.goToIndex.bind(this);
+    this.onExiting = this.onExiting.bind(this);
+    this.onExited = this.onExited.bind(this);
+  }
+  onExiting() {
+    this.animating = true;
+  }
 
-    }
+  onExited() {
+    this.animating = false;
+  }
+
+  next() {
+    if (this.animating) return;
+    const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
+    this.setState({ activeIndex: nextIndex });
+  }
+
+  previous() {
+    if (this.animating) return;
+    const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
+    this.setState({ activeIndex: nextIndex });
+  }
+
+  goToIndex(newIndex) {
+    if (this.animating) return;
+    this.setState({ activeIndex: newIndex });
   }
   componentDidMount() {
     window.scrollTo(0,0);
+    this.setState({ activeIndex: 0 });
   }
   
   render(){
+  	const { activeIndex } = this.state;
+
+    const slides = items.map((item) => 
+        <CarouselItem
+
+          onExiting={this.onExiting}
+          onExited={this.onExited}
+          key={item.src}
+        >
+          <img src={item.src} style={{width:"100%"}} alt={item.altText} />
+        </CarouselItem>
+      );
     return (
     	<div>
-	    	<div id="header" className="carousel slide" data-interval="3000" data-ride="carousel">
-			  <div className="carousel-inner">
-			    <div className="carousel-item active">
-			      <img className="d-block w-100" src="headerBG.jpg" alt="First slide" />
-			    </div>
-			    <div className="carousel-item">
-			      <img className="d-block w-100" src="headerBG2.jpg" alt="Second slide" />
-			    </div>
-			    <div className="carousel-item">
-			      <img className="d-block w-100" src="headerBG3.jpg" alt="Third slide" />
-			    </div>
-			  </div>
-			   <a className="carousel-control-prev" href="#header" role="button" data-slide="prev">
-			    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span className="sr-only">Previous</span>
-			  </a>
-			  <a className="carousel-control-next" href="#header" role="button" data-slide="next">
-			    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span className="sr-only">Next</span>
-			  </a>
-			</div>
+	    	<Carousel id="header" 
+	        activeIndex={activeIndex}
+	        next={this.next}
+	        previous={this.previous}
+	        interval="3000"
+	      >
+		        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+		        {slides}
+		        <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+		        <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+	      	</Carousel>
 
 			<Articles />
 			
