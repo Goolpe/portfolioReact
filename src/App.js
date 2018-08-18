@@ -16,7 +16,6 @@ import ShopPage from './components/ShopPage';
 import StreamsPage from './components/StreamsPage';
 import MastersPage from './components/MastersPage';
 import MasterPage from './components/MastersPage/MasterPage';
-
 import './App.css';
 
 class App extends Component {

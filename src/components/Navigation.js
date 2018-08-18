@@ -1,14 +1,22 @@
 import React, {Component} from 'react';
 import {
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 class Navigation extends Component{
   constructor(props){
     super(props);
+    this.toggle = this.toggle.bind(this);
     this.state = {
+      dropdownOpen: false,
       search: false
-    }
+    };
+  }
+  toggle() {
+    this.setState(prevState => ({
+      dropdownOpen: !prevState.dropdownOpen
+    }));
   }
   render(){
     return(
@@ -39,22 +47,21 @@ class Navigation extends Component{
               <li className="nav-item">
                 <Link to="/about-project" className="bg-transparent border-0 nav-link text-white">О ПРОЕКТЕ</Link>
               </li>
-              <li className="nav-item dropdown">
-                <a className="btn bg-transparent border-0 nav-link text-white dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  НАВИГАЦИЯ
-                </a>
-
-                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <Link to="/library" className="dropdown-item">БИБЛИОТЕКА</Link>
-                  <Link to="/masters" className="dropdown-item">РЕЗЮМЕ МАСТЕРОВ</Link>
-                  <Link to="/art" className="dropdown-item">АРТ</Link>
-                  <Link to="/library" className="dropdown-item">ДОКУМЕНТЫ</Link>
-                  <Link to="/library" className="dropdown-item">ОБЪЯВЛЕНИЯ</Link>
-                  <Link to="/library" className="dropdown-item">ОПРОСЫ</Link>
-                  <Link to="/library" className="dropdown-item">ПЛАТНЫЕ ИГРЫ</Link>
-                  <Link to="/library" className="dropdown-item">ВАКАНСИИ</Link>
-                </div>
-              </li>
+               <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                  <DropdownToggle caret className="btn bg-transparent border-0 nav-link text-white">
+                    НАВИГАЦИЯ
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem><Link to="/library" className="dropdown-item">БИБЛИОТЕКА</Link></DropdownItem>
+                    <DropdownItem><Link to="/masters" className="dropdown-item">РЕЗЮМЕ МАСТЕРОВ</Link></DropdownItem>
+                    <DropdownItem><Link to="/art" className="dropdown-item">АРТ</Link></DropdownItem>
+                    <DropdownItem><Link to="/library" className="dropdown-item">ДОКУМЕНТЫ</Link></DropdownItem>
+                    <DropdownItem><Link to="/library" className="dropdown-item">ОБЪЯВЛЕНИЯ</Link></DropdownItem>
+                    <DropdownItem><Link to="/library" className="dropdown-item">ОПРОСЫ</Link></DropdownItem>
+                    <DropdownItem><Link to="/library" className="dropdown-item">ПЛАТНЫЕ ИГРЫ</Link></DropdownItem>
+                    <DropdownItem><Link to="/library" className="dropdown-item">ВАКАНСИИ</Link></DropdownItem>
+                  </DropdownMenu>
+              </Dropdown>
               <li className="nav-item">
                 <Link to="/streams" className="nav-link text-white">СТРИМЫ</Link>
               </li>
