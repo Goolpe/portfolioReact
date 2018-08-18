@@ -170,6 +170,10 @@ button
 {
     color: #2da5e1;
 }
+#social h2 a:nth-child(6) i:hover
+{
+    color: #4b367c;
+}
 
 #reviews img
 {
