@@ -20,7 +20,7 @@ class Masters extends Component {
 				<Link to={`/master/${thing.name + "-" + index}`} className="text-white">
 					<div className="wrapper"  style={ { backgroundImage: `url(${thing.picture})`} }>
 						<div className="card d-flex align-items-center justify-content-center rounded-0" >
-						  <h1 style={{textShadow: 'red 0 0 3px'}}>{thing.name.toUpperCase()}</h1>
+						  <h1 style={{textShadow: 'black 0 0 15px'}}>{thing.name.toUpperCase()}</h1>
 						</div>
 					</div>
 				</Link>

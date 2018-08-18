@@ -33,19 +33,26 @@ class MasterPage extends Component {
 	  	<div className="container mt-5 mb-5">
   	  	<Link to="/masters" className="text-dark"><i className="text-dark fas fa-angle-left "></i> ДРУГИЕ МАСТЕРА</Link>
         <h1 className="text-center mb-5">{mastersJSON[id].name}</h1>
-    	  	<h3 className="mb-4">Контакты:</h3>
-              <p><span className="font-weight-bold">Discord</span> - {mastersJSON[id].discord}<br />
-          <span className="font-weight-bold">Skype</span> - {mastersJSON[id].skype}<br />
-          </p>
-          <p>
-            Водит на канале с {mastersJSON[id].date}<br />
-            {mastersJSON[id].paidGames ? "Водит" : "Не водит"} платные игры<br />
-          </p>
-          <h3 className="mb-4">О себе:</h3>
-          <p>{mastersJSON[id].text}</p>
-          <h3 className="mb-4">Любимые системы:</h3><p>{mastersJSON[id].systems}</p>
-          <h3 className="mb-4">Любимые сеттинги:</h3><p>{mastersJSON[id].setting}</p>
-          <h3 className="mb-4">Примеры игр</h3>
+          <div class="row">
+            <div class="col-6">
+        	  	<h3 className="mb-4">Контакты:</h3>
+                  <p><span className="font-weight-bold">Discord</span> - {mastersJSON[id].discord}<br />
+              <span className="font-weight-bold">Skype</span> - {mastersJSON[id].skype}<br />
+              </p>
+              <p>
+                Водит на канале с {mastersJSON[id].date}<br />
+                {mastersJSON[id].paidGames ? "Водит" : "Не водит"} платные игры<br />
+              </p>
+              <h3 className="mb-4">О себе:</h3>
+              <p>{mastersJSON[id].text}</p>
+              <h3 className="mb-4">Любимые системы:</h3><p>{mastersJSON[id].systems}</p>
+              <h3 className="mb-4">Любимые сеттинги:</h3><p>{mastersJSON[id].setting}</p>
+              <h3 className="mb-4">Примеры игр</h3>
+            </div>
+          <div class="col-6 text-right">
+            <img src={mastersJSON[id].picture} style={{height: 500}} alt="" />
+          </div>
+        </div>
           <div className="row">
             {masterYoutube}
           </div>
