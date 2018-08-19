@@ -9,7 +9,7 @@ import {
 const items = [
   {
 		id:0,
-		src: "http://sport1000.ru/wp-content/uploads/2018/06/1529640857_maxresdefault-800x445.jpg",
+		src: "https://pp.userapi.com/c846522/v846522612/2cc8f/wtsXKLm54uA.jpg",
 		altText: "1",
 		text: "ВОСХИТИТЕЛЬНО, ДРУГ!",
 		name: "Джонни Депп"
