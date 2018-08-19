@@ -18,7 +18,7 @@ class ArticlePage extends Component {
   	const id = this.props.match.params.id;
 	  return (
 	  <section id="articlesPage">	  
-	  	<div className="container mt-5 mb-5">
+	  	<div className="container mt-5 mb-5" style={{minHeight: "100vh"}}>
       <Link to="/articles" className="text-dark"><i className="text-dark fas fa-angle-left "></i> ВСЕ СТАТЬИ</Link>
 	  	<h1 className="text-center m-5">{articles[id].title}</h1>
 	  		

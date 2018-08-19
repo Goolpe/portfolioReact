@@ -4,7 +4,8 @@ import {
   Route
 } from 'react-router-dom';
 import {Provider} from "react-redux";
-import store from "./components/store"
+import store from "./components/store";
+
 
 import HomePage from './components/HomePage';
 import Navigation from './components/Navigation';
@@ -28,15 +29,15 @@ import './App.css';
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = {
-    }
-  }
+  } 
+
   render() {  
     return (
       <Router>
       <Provider store={store}>
       <div>
         <Navigation/>
+            
         <section id="content">
           <Route path="/" exact={true} component={HomePage} />
           <Route path="/about-project" component={AboutProject} />

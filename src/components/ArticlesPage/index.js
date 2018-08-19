@@ -54,7 +54,7 @@ class ArticlesPage extends Component {
 	  return (
 	  <section id="articlesPage">	  
 	  	<div className="container text-right mt-5 mb-5">
-	  		{this.state.newArticle ?
+	  		{/*{this.state.newArticle ?
 
 	  			<div className="d-flex justify-content-center align-items-center mb-5">
 		    		<h1 className="text-center">СОЗДАТЬ СТАТЬЮ</h1>
@@ -63,14 +63,15 @@ class ArticlesPage extends Component {
 					</button>
 
 				</div>
-				:
+				: 
 	  			<div className="d-flex justify-content-center align-items-center mb-5">
-		    		<h1 className="text-center">СТАТЬИ</h1>
+		    		
 					<button className="btn btn-link bg-transparent border-0" onClick={()=>this.setState({newArticle : !this.state.newArticle})}>
 						 <i className="fas fa-plus-circle fa-3x text-info"></i>
 					</button>
 				</div>
-			}
+			}*/}
+			<h1 className="text-center mb-5">СТАТЬИ</h1>
 			{this.state.newArticle ? <ArticleForm  /> : <ul className="container text-left">{listItems}</ul>}
     		
     	</div>

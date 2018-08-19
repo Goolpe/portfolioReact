@@ -40,7 +40,7 @@ class ArticleForm extends Component {
   render() {
 	  return (
 	  <section id="articleform">	  
-	  	<div className="container mb-5">
+	  	<div className="container mb-5" style={{minHeight: "100vh"}}>
     		<form onSubmit={this.onSubmit} >
               <div className="form-group text-left">
                 <label>Заголовок</label>
@@ -48,7 +48,7 @@ class ArticleForm extends Component {
               </div>
               <div className="form-group text-left">
                 <label>Текст</label>
-                <textarea type="text" value={this.state.body} onChange={this.onChange} name="body" className="form-control" id="InputPassword1" placeholder="" required>
+                <textarea type="text" value={this.state.body} onChange={this.onChange} rows="15" cols="45" name="body" className="form-control" id="InputPassword1" placeholder="" required>
                 </textarea>
               </div>
               <button type="submit" className="btn btn-info w-100 p-3">Опубликовать</button>
