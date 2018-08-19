@@ -62,11 +62,8 @@ class Navigation extends Component{
                     <DropdownItem><Link to="/library" className="pl-0 dropdown-item ">БИБЛИОТЕКА</Link></DropdownItem>
                     <DropdownItem><Link to="/masters" className="pl-0 dropdown-item">РЕЗЮМЕ МАСТЕРОВ</Link></DropdownItem>
                     <DropdownItem><Link to="/art" className="pl-0 dropdown-item">АРТ</Link></DropdownItem>
-                    <DropdownItem><Link to="/library" className="pl-0 dropdown-item">ДОКУМЕНТЫ</Link></DropdownItem>
-                    <DropdownItem><Link to="/library" className="pl-0 dropdown-item">ОБЪЯВЛЕНИЯ</Link></DropdownItem>
-                    <DropdownItem><Link to="/library" className="pl-0 dropdown-item">ОПРОСЫ</Link></DropdownItem>
                     <DropdownItem><Link to="/library" className="pl-0 dropdown-item">ПЛАТНЫЕ ИГРЫ</Link></DropdownItem>
-                    <DropdownItem><Link to="/library" className="pl-0 dropdown-item">ВАКАНСИИ</Link></DropdownItem>
+                    <DropdownItem><Link to="/library" className="pl-0 dropdown-item">ПОДДЕРЖАТЬ ПРОЕКТ</Link></DropdownItem>
                   </DropdownMenu>
               </Dropdown>
               <li className="nav-item">

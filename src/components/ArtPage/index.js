@@ -4,7 +4,7 @@ function ArtPage(props){
     return (
     	<div>
     		<div className="container mt-5 mb-5">
-	    		<h1 className="text-center m-5">О ПРОЕКТЕ</h1>
+	    		<h1 className="text-center m-5">АРТ</h1>
 	    		<p className="text-justify">
 	    			- Что такое настольные ролевые игры?
 
