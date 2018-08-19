@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import {fetchPosts} from '../actions/postActions';
-import { connect } from 'react-redux';
 
 import {
     Link,
@@ -9,21 +6,7 @@ import {
 import articles from './articles.json';
 
 class ArticlesPage extends Component {
-	constructor(props){
-    super(props);
-    this.state = {
-    	newArticle : false
-	    }
-	  }
-	componentWillMount(){
-		this.props.fetchPosts();
-	}
 
-	componentWillReceiveProps(nextProps){
-		if(nextProps.newPost) {
-			this.props.posts.unshift(nextProps.newPost);
-		}
-	}
 	componentDidMount() {
 		window.scrollTo(0,0);
 	}
@@ -81,18 +64,8 @@ class ArticlesPage extends Component {
 	}
 }
 
-ArticlesPage.propTypes = {
-	fetchPosts : PropTypes.func.isRequired,
-	posts: PropTypes.array.isRequired,
-	newPost: PropTypes.object
 
-};
 
-const mapStateToProps = state => ({
-	posts: state.posts.items,
-	newPost: state.posts.item
-});
-
-export default connect(mapStateToProps, { fetchPosts })(ArticlesPage);
+export default ArticlesPage;
 
 

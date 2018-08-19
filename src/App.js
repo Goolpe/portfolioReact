@@ -3,8 +3,6 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import {Provider} from "react-redux";
-import store from "./components/store";
 
 import HomePage from './components/HomePage';
 import Navigation from './components/Navigation';
@@ -27,7 +25,6 @@ class App extends Component {
   render() {  
     return (
       <Router>
-      <Provider store={store}>
       <div>
         <Navigation/>
             
@@ -42,12 +39,9 @@ class App extends Component {
           <Route path="/streams" component={StreamsPage} />
           <Route path="/masters" component={MastersPage} />
           <Route path="/master/:id" component={MasterPage} />
-          {/*<Route path="/registration" component={RegistrationPage} />
-          <Route path="/login" component={LoginPage} />*/}
         </section>
         <Footer />
       </div>
-      </Provider>
       </Router>
     );
   }
