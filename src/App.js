@@ -9,6 +9,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import AboutProject from './components/AboutProject';
 import LibraryPage from './components/LibraryPage';
+import BookPage from './components/LibraryPage/BookPage';
 import ArtPage from './components/ArtPage';
 import ArticlesPage from './components/ArticlesPage';
 import ArticlePage from './components/ArticlesPage/ArticlePage';
@@ -32,6 +33,7 @@ class App extends Component {
           <Route path="/" exact={true} component={HomePage} />
           <Route path="/about-project" component={AboutProject} />
           <Route path="/library" component={LibraryPage} />
+          <Route path="/book/:id" component={BookPage} />
           <Route path="/art" component={ArtPage} />
           <Route path="/articles" component={ArticlesPage} />
           <Route path="/article/:id" component={ArticlePage} />

@@ -87,7 +87,9 @@ class Navigation extends Component{
                     <DropdownItem><Link to="/registration" className="pl-0 dropdown-item">Регистрация</Link></DropdownItem>
                     <DropdownItem><Link to="/login" className="pl-0 dropdown-item">Вход</Link></DropdownItem>
                   </DropdownMenu>
-              </Dropdown> */}
+              </Dropdown> 
+
+      */}
             </ul>
             }
           </div>

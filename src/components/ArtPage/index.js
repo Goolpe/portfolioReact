@@ -18,7 +18,6 @@ class ArtPage extends Component{
         
         const imgItems = res.data.response.items.map((img) => 
         <div className="col-3 mb-4" key={img.id}>
-          <a href=""></a>
            <Card style = {{height : "300px"}}>
             <CardImg top height="100%" src={img.photo_604} title={img.text} alt={img.text} />
           </Card>           
@@ -29,7 +28,7 @@ class ArtPage extends Component{
     }
   render () {
     return (
-      <div id="artpage" className='mt-5 mb-5'>
+      <div id="artpage" className='mt-5 mb-5' style={{minHeight:"100vh"}}>
         <h1 className="text-center mb-5">АРТ</h1>
         <div className="container">
           <div className="row">
