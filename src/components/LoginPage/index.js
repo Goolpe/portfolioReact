@@ -45,7 +45,7 @@ class LoginPage extends Component{
   handleSubmit(event){
     event.preventDefault()
     const auth = accounts.map((account) =>
-      {this.state.email == account.email && this.state.password == account.password &&
+      {this.state.email === account.email && this.state.password === account.password &&
           this.setState({nameId: true}) } 
     );
   }

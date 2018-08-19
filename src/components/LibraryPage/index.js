@@ -1,7 +1,4 @@
 import React, {Component} from 'react';
-import {
-    Link
-} from 'react-router-dom';
 import {Loader} from 'react-loaders';
 
 class LibraryPage extends Component{
@@ -27,7 +24,7 @@ class LibraryPage extends Component{
         <h1 className="pt-5">БИБЛИОТЕКА</h1>
         {this.state.loader ? <div className="d-flex justify-content-center align-items-center" style={{marginTop: "300px"}}><Loader type="pacman"/></div>
           :
-          <iframe src="https://drive.google.com/embeddedfolderview?id=1GuOYFvCyuJeZnYu7KweeKsE71hcFNjpB#grid" style={{color:"white"}} width="100%" height="100%" frameBorder="0"></iframe>}
+          <iframe title="lib" src="https://drive.google.com/embeddedfolderview?id=1GuOYFvCyuJeZnYu7KweeKsE71hcFNjpB#grid" style={{color:"white"}} width="100%" height="100%" frameBorder="0"></iframe>}
       </div>
       </section>
     );

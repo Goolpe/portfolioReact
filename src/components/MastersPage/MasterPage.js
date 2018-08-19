@@ -15,7 +15,7 @@ class MasterPage extends Component {
     window.scrollTo(0,0);
   }
   render() {
-  	const id = parseInt(this.props.match.params.id.replace(/\D+/g,""));
+  	const id = parseInt(this.props.match.params.id.replace(/\D+/g,""), 10);
     const masterYoutube = mastersJSON[id].examples.map((example, index) => 
       <div className="col-6 mb-3" key={index}>
         <iframe

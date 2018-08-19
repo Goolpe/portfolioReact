@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {fetchPosts} from '../actions/postActions';
 import { connect } from 'react-redux';
-import ArticleForm from './ArticleForm';
 
 import {
     Link,
@@ -70,10 +69,12 @@ class ArticlesPage extends Component {
 						 <i className="fas fa-plus-circle fa-3x text-info"></i>
 					</button>
 				</div>
-			}*/}
+			}
+			
+			{this.state.newArticle ? <ArticleForm  /> : } */}
+
 			<h1 className="text-center mb-5">СТАТЬИ</h1>
-			{this.state.newArticle ? <ArticleForm  /> : <ul className="container text-left">{listItems}</ul>}
-    		
+    		<ul className="container text-left">{listItems}</ul>
     	</div>
     	</section>
 	  );

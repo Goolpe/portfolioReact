@@ -6,7 +6,6 @@ import {
 import {Provider} from "react-redux";
 import store from "./components/store";
 
-
 import HomePage from './components/HomePage';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
@@ -15,22 +14,16 @@ import LibraryPage from './components/LibraryPage';
 import ArtPage from './components/ArtPage';
 import ArticlesPage from './components/ArticlesPage';
 import ArticlePage from './components/ArticlesPage/ArticlePage';
-import ArticleForm from './components/ArticlesPage/ArticleForm';
 import ShopPage from './components/ShopPage';
 import StreamsPage from './components/StreamsPage';
 import MastersPage from './components/MastersPage';
 import MasterPage from './components/MastersPage/MasterPage';
 
-import RegistrationPage from './components/RegistrationPage';
-import LoginPage from './components/LoginPage';
-
 import './App.css';
 
-class App extends Component {
-  constructor(props){
-    super(props);
-  } 
 
+
+class App extends Component {
   render() {  
     return (
       <Router>
@@ -44,14 +37,13 @@ class App extends Component {
           <Route path="/library" component={LibraryPage} />
           <Route path="/art" component={ArtPage} />
           <Route path="/articles" component={ArticlesPage} />
-          <Route path="/create-article" component={ArticleForm} />
           <Route path="/article/:id" component={ArticlePage} />
           <Route path="/shop" component={ShopPage} />
           <Route path="/streams" component={StreamsPage} />
           <Route path="/masters" component={MastersPage} />
           <Route path="/master/:id" component={MasterPage} />
-          <Route path="/registration" component={RegistrationPage} />
-          <Route path="/login" component={LoginPage} />
+          {/*<Route path="/registration" component={RegistrationPage} />
+          <Route path="/login" component={LoginPage} />*/}
         </section>
         <Footer />
       </div>
