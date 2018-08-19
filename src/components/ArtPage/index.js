@@ -11,7 +11,7 @@ class ArtPage extends Component{
 
       fetch("https://api.vk.com/method/photos.get?owner_id=-117179920&album_id=246570102&offset=100&count=24&v=5.80&access_token=51662add51662add51662add4351039de55516651662add0a1f2f6c7285521b5efb35e4")
        .then( (response) => {
-          console.log("success")   
+          console.log(response.count)   
        })
        .then( (json) => {
           console.log("error")
