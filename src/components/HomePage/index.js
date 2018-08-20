@@ -5,6 +5,8 @@ import Arts from './arts';
 import Merch from './merch';
 import Reviews from './reviews';
 import Social from './social';
+import Support from './support';
+
 import {
   Carousel,
   CarouselItem,
@@ -107,6 +109,8 @@ class HomePage extends Component {
 			<Social />
 
 			<Reviews />
+
+      <Support />
 		</div>
     );
 }

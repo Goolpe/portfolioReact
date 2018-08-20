@@ -62,8 +62,7 @@ class Navigation extends Component{
                     <DropdownItem className="p-0 rounded-top"><Link to="/library" className="p-3 text-left btn btn-light rounded-top w-100">БИБЛИОТЕКА</Link></DropdownItem>
                     <DropdownItem className="p-0"><Link to="/masters" className="p-3 text-left btn btn-light rounded-0 w-100">РЕЗЮМЕ МАСТЕРОВ</Link></DropdownItem>
                     <DropdownItem className="p-0"><Link to="/art" className="p-3 text-left btn btn-light rounded-0 w-100">АРТ</Link></DropdownItem>
-                    <DropdownItem className="p-0"><Link to="/library" className="p-3 text-left btn btn-light rounded-0 w-100">ПЛАТНЫЕ ИГРЫ</Link></DropdownItem>
-                    <DropdownItem className="p-0 rounded-bottom"><Link to="/library" className="p-3 text-left btn btn-light rounded-bottom w-100">ПОДДЕРЖАТЬ ПРОЕКТ</Link></DropdownItem>
+                    <DropdownItem className="p-0 rounded-bottom"><Link to="/support" className="p-3 text-left btn btn-light rounded-bottom w-100">ПОДДЕРЖАТЬ ПРОЕКТ</Link></DropdownItem>
                   </DropdownMenu>
               </Dropdown>
               <li className="nav-item">

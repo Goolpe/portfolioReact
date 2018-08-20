@@ -6,34 +6,35 @@ import {
   CarouselIndicators
 } from 'reactstrap';
 
+
 const items = [
   {
 		id:0,
-		src: "https://pp.userapi.com/c846522/v846522612/2cc8f/wtsXKLm54uA.jpg",
+		src: "https://pp.userapi.com/c824601/v824601415/f3fae/ACJXhWNeHso.jpg",
 		altText: "1",
-		text: "ВОСХИТИТЕЛЬНО, ДРУГ!",
-		name: "Джонни Депп"
+		text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sed ipsum mollitia magnam. Consectetur, at, tempore! Earum nostrum ab quibusdam. Ducimus earum dolor hic aspernatur, dignissimos facilis iusto eaque illum cumque, fugit, fugiat dolorum exercitationem nesciunt eveniet molestias vero ad asperiores esse ullam quod repellendus saepe. Quam ad voluptates ea?",
+		name: "Анна Евдокимова"
 	},
 	{
 		id:1,
-		src: "https://pp.userapi.com/c841234/v841234068/248de/-NbfkIst47I.jpg",
+		src: "https://pp.userapi.com/c844321/v844321415/d5db/SITlsWmjtaw.jpg",
 		altText: "2",
 		text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias explicabo, perspiciatis voluptas magnam reiciendis necessitatibus facere neque quo ab reprehenderit fugiat adipisci aspernatur libero quos excepturi, cum veniam aut ipsum.",
 		name: "Сергей Брин"
 	},
 	{
 		id:2,
-		src: "https://pp.userapi.com/c844321/v844321415/d617/VvyY4yxfLQc.jpg",
+		src: "https://pp.userapi.com/c844321/v844321415/d5c4/pJlr6axbqbc.jpg",
 		altText: "3",
 		text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, perspiciatis quod illum quas vel optio molestiae magnam! Dolorum labore iste, laboriosam debitis doloremque eveniet similique deleniti qui. Eos sint, illo.",
-		name: "Человек Паук"
+		name: "Дмитрий Иванов"
 	},
 	{
 		id:3,
-		src: "https://pp.userapi.com/c845421/v845421486/b4c46/KW2bbOiQsWY.jpg",
+		src: "https://pp.userapi.com/c824601/v824601415/f401e/ZW82u2vF4RA.jpg",
 		altText: "4",
 		text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ea ipsa sed consectetur nihil, esse ex blanditiis reprehenderit! Repellendus officia, aliquid reiciendis modi architecto quaerat quisquam accusamus! Corporis, delectus sunt.",
-		name: "Джон Уик"
+		name: "Анна Жукова"
 	}
 ]
 
@@ -86,20 +87,22 @@ class Reviews extends Component {
           onExited={this.onExited}
           key={item.src}
         >
+        <div className="container">
           <div className="row">
-        		<div className="col-4"> <img src={item.src} className="img-fluid" alt={item.altText} /></div>
+        		<div className="col-2"> <img src={item.src} className="img-fluid" alt={item.altText} /></div>
         		<div className="col">
               <div className="d-flex align-items-start flex-column bd-highlight" style={{height:"100%"}}>
                 <div className="bd-highlight mb-auto">{item.text} <br /></div>
                 <div className="bd-highlight"><h2>{item.name}</h2></div>
               </div></div>
             </div>
+          </div>
         </CarouselItem>
       );
     return (
     	<div id="reviews">
     		<h1 className="text-center m-5">ОТЗЫВЫ</h1>
-        <div className="container">
+        
           
 	    	<Carousel
 	        activeIndex={activeIndex}
@@ -113,7 +116,7 @@ class Reviews extends Component {
 		        <CarouselControl direction="next" onClickHandler={this.next} />
 	      	</Carousel>
 
-          </div>
+          
 	     </div>
     );
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 
-function AboutProject(props){
+function SupportPage(props){
     return (
     	<div>
-    		<div className="container mt-5 mb-5">
-	    		<h1 className="text-center m-5">О ПРОЕКТЕ</h1>
+    		<div className="container pt-5 pb-5">
+	    		<h1 className="text-center m-5">ПОДДЕРЖАТЬ ПРОЕКТ</h1>
 	    		<p className="text-justify">
 	    			- Что такое настольные ролевые игры?
 
@@ -36,4 +36,4 @@ function AboutProject(props){
     );
 }
 
-export default AboutProject;
+export default SupportPage;
