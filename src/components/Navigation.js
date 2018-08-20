@@ -58,12 +58,12 @@ class Navigation extends Component{
                   <DropdownToggle caret className="btn bg-transparent border-0 nav-link text-white">
                     НАВИГАЦИЯ
                   </DropdownToggle>
-                  <DropdownMenu className="p-0 mt-2">
-                    <Link to="/library" className="p-3 rounded dropdown-item ">БИБЛИОТЕКА</Link>
-                    <Link to="/masters" className="p-3 dropdown-item">РЕЗЮМЕ МАСТЕРОВ</Link>
-                    <Link to="/art" className="p-3 dropdown-item">АРТ</Link>
-                    <Link to="/library" className="p-3 dropdown-item">ПЛАТНЫЕ ИГРЫ</Link>
-                    <Link to="/library" className="p-3 rounded dropdown-item">ПОДДЕРЖАТЬ ПРОЕКТ</Link>
+                  <DropdownMenu className="p-0">
+                    <DropdownItem className="p-0 rounded-top"><Link to="/library" className="p-3 text-left btn btn-light bg-transparent rounded-top w-100">БИБЛИОТЕКА</Link></DropdownItem>
+                    <DropdownItem className="p-0"><Link to="/masters" className="p-3 text-left btn btn-light bg-transparent rounded-0 w-100">РЕЗЮМЕ МАСТЕРОВ</Link></DropdownItem>
+                    <DropdownItem className="p-0"><Link to="/art" className="p-3 text-left btn btn-light bg-transparent rounded-0 w-100">АРТ</Link></DropdownItem>
+                    <DropdownItem className="p-0"><Link to="/library" className="p-3 text-left btn btn-light bg-transparent rounded-0 w-100">ПЛАТНЫЕ ИГРЫ</Link></DropdownItem>
+                    <DropdownItem className="p-0 rounded-bottom"><Link to="/library" className="p-3 text-left btn btn-light bg-transparent rounded-bottom w-100">ПОДДЕРЖАТЬ ПРОЕКТ</Link></DropdownItem>
                   </DropdownMenu>
               </Dropdown>
               <li className="nav-item">
