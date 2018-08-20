@@ -185,7 +185,7 @@ button {
 #reviews .carousel-inner {
   height: 300px; }
 
-#masters .wrapper {
+#masters .wrapper, #library .wrapper {
   height: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   background: no-repeat;
@@ -194,46 +194,26 @@ button {
 
 #masters .wrapper:hover .card {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-  transition: .5s; }
-
-#masters .wrapper:hover {
   transition: .5s;
-  transform: scale(1.1, 1.1);
+  background-color: rgba(0, 0, 0, 0.8); }
+
+#masters .wrapper:hover, #library .wrapper:hover {
+  transition: .5s;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
 
-#masters .card {
+#masters .card, #library .card {
   width: 100%;
   height: 100%;
   transition: .2s;
   background: transparent; }
 
-#masters .text-white {
+#masters .text-white, #library .text-white {
   text-decoration: none; }
-
-#library .wrapper {
-  height: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  background: no-repeat;
-  background-position: top;
-  background-size: cover; }
 
 #library .wrapper:hover .card {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-  transition: .5s; }
-
-#library .wrapper:hover {
   transition: .5s;
-  transform: scale(1.1, 1.1);
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
-
-#library .card {
-  width: 100%;
-  height: 100%;
-  transition: .2s;
-  background: transparent; }
-
-#library .text-white {
-  text-decoration: none; }
+  background-color: #000; }
 
 .blackBG {
   position: fixed;
