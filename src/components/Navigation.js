@@ -58,12 +58,12 @@ class Navigation extends Component{
                   <DropdownToggle caret className="btn bg-transparent border-0 nav-link text-white">
                     НАВИГАЦИЯ
                   </DropdownToggle>
-                  <DropdownMenu>
-                    <DropdownItem className="pl-0"><Link to="/library" className="pl-4 dropdown-item ">БИБЛИОТЕКА</Link></DropdownItem>
-                    <DropdownItem className="pl-0"><Link to="/masters" className="pl-4 dropdown-item">РЕЗЮМЕ МАСТЕРОВ</Link></DropdownItem>
-                    <DropdownItem className="pl-0"><Link to="/art" className="pl-4 dropdown-item">АРТ</Link></DropdownItem>
-                    <DropdownItem className="pl-0"><Link to="/library" className="pl-4 dropdown-item">ПЛАТНЫЕ ИГРЫ</Link></DropdownItem>
-                    <DropdownItem className="pl-0"><Link to="/library" className="pl-4 dropdown-item">ПОДДЕРЖАТЬ ПРОЕКТ</Link></DropdownItem>
+                  <DropdownMenu className="p-0 mt-2">
+                    <Link to="/library" className="p-3 rounded dropdown-item ">БИБЛИОТЕКА</Link>
+                    <Link to="/masters" className="p-3 dropdown-item">РЕЗЮМЕ МАСТЕРОВ</Link>
+                    <Link to="/art" className="p-3 dropdown-item">АРТ</Link>
+                    <Link to="/library" className="p-3 dropdown-item">ПЛАТНЫЕ ИГРЫ</Link>
+                    <Link to="/library" className="p-3 rounded dropdown-item">ПОДДЕРЖАТЬ ПРОЕКТ</Link>
                   </DropdownMenu>
               </Dropdown>
               <li className="nav-item">
@@ -98,51 +98,6 @@ class Navigation extends Component{
             </div>
           <button className="fas fa-times-circle fa-3x position-absolute ml-5" onClick={() => this.setState({bigPicture: this.state.pictures[this.state.pictures.indexOf(this.state.namePicture)+1]})}>1231</button>
         </div> 
-
-const imgItems = json.response.items.map((img, index) => 
-        <div className="col-3 mb-4" key={img.id}>
-        {this.setState(prevState => ({
-            pictures: [ ...prevState.pictures, {id: img.id, name: img.photo_604, title: img.text} ]
-        }))}
-          <Card style = {{height : "250px"}}>
-            <button onClick={()=>{this.setState({bigPicture: true, namePicture: img.photo_604, titlePicture: img.text, idPicture: img.id })}} className="text-center border-0" title={img.text}  style={{ height:"100%", backgroundPosition: "top", backgroundImage: `url(${img.photo_604})` }}></button>
-          </Card>           
-        </div>
-        )
-        this.setState({picture: imgItems});
-      })
-    }
-
-  render () {
-    return (
-      <div id="artpage" style={{minHeight:"100vh"}}>
-       {this.state.bigPicture ? 
-        <div className="blackBG">
-          <div className="row align-items-center text-center text-white" style={{height: "100%"}}>
-         {console.log(response)}
-              <div className="col-4">
-                <button onClick={()=>{this.setState({ namePicture : this.state.pictures.filter((picture) => 
-                      (this.state.idPicture + 1) === picture.id)[0].name})}}
-                className="fas fa-arrow-alt-circle-left fa-3x bg-transparent text-center text-white border-0 p-0"></button>
-              </div>
-            <div className="col-4">            
-                  <div className="row">
-                    <div className="col-11">
-                      <img src={this.state.namePicture} className="img-fluid"/>
-                      <p className=" mt-2">{this.state.titlePicture}</p>
-                    </div>
-                    <div className="col-1">
-                      <button onClick={()=>{this.setState({bigPicture: false})}} className="fas fa-times-circle fa-3x text-center text-white bg-transparent border-0 p-0"></button>
-                    </div>
-                  </div>
-            </div> 
-            <div className="col-4">
-              <button onClick={()=>{this.setState({namePicture: this.state.pictures[this.state.pictures.indexOf(this.state.namePicture)+1], titlePicture: this.state.titlePictures[this.state.titlePictures.indexOf(this.state.titlePicture)+1]})}} className="fas fa-arrow-alt-circle-right fa-3x text-center text-white bg-transparent border-0 p-0"></button>
-            </div>
-          </div>
-        </div>
-        : false}
-
       */}
             </ul>
             }
