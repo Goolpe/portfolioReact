@@ -89,6 +89,60 @@ class Navigation extends Component{
                   </DropdownMenu>
               </Dropdown> 
 
+                      <div className="d-flex justify-content-center">
+            <div className="container justify-content-start">
+              <button onClick={()=>{this.setState({bigPicture: false}); console.log(this.state.bigPicture)}} className="text-center text-white border-0 p-0"></button>
+              <button onClick={()=>{this.setState({namePicture: this.state.pictures[this.state.pictures.indexOf(this.state.namePicture)+1]}); console.log(this.state.bigPicture)}} className="text-center text-white border-0 p-0"></button>
+              <img src={this.state.namePicture}/><i className="fas fa-times-circle fa-3x position-absolute ml-5"></i>
+              <p className=" mt-2">{this.state.titlePicture}</p>
+            </div>
+          <button className="fas fa-times-circle fa-3x position-absolute ml-5" onClick={() => this.setState({bigPicture: this.state.pictures[this.state.pictures.indexOf(this.state.namePicture)+1]})}>1231</button>
+        </div> 
+
+const imgItems = json.response.items.map((img, index) => 
+        <div className="col-3 mb-4" key={img.id}>
+        {this.setState(prevState => ({
+            pictures: [ ...prevState.pictures, {id: img.id, name: img.photo_604, title: img.text} ]
+        }))}
+          <Card style = {{height : "250px"}}>
+            <button onClick={()=>{this.setState({bigPicture: true, namePicture: img.photo_604, titlePicture: img.text, idPicture: img.id })}} className="text-center border-0" title={img.text}  style={{ height:"100%", backgroundPosition: "top", backgroundImage: `url(${img.photo_604})` }}></button>
+          </Card>           
+        </div>
+        )
+        this.setState({picture: imgItems});
+      })
+    }
+
+  render () {
+    return (
+      <div id="artpage" style={{minHeight:"100vh"}}>
+       {this.state.bigPicture ? 
+        <div className="blackBG">
+          <div className="row align-items-center text-center text-white" style={{height: "100%"}}>
+         {console.log(response)}
+              <div className="col-4">
+                <button onClick={()=>{this.setState({ namePicture : this.state.pictures.filter((picture) => 
+                      (this.state.idPicture + 1) === picture.id)[0].name})}}
+                className="fas fa-arrow-alt-circle-left fa-3x bg-transparent text-center text-white border-0 p-0"></button>
+              </div>
+            <div className="col-4">            
+                  <div className="row">
+                    <div className="col-11">
+                      <img src={this.state.namePicture} className="img-fluid"/>
+                      <p className=" mt-2">{this.state.titlePicture}</p>
+                    </div>
+                    <div className="col-1">
+                      <button onClick={()=>{this.setState({bigPicture: false})}} className="fas fa-times-circle fa-3x text-center text-white bg-transparent border-0 p-0"></button>
+                    </div>
+                  </div>
+            </div> 
+            <div className="col-4">
+              <button onClick={()=>{this.setState({namePicture: this.state.pictures[this.state.pictures.indexOf(this.state.namePicture)+1], titlePicture: this.state.titlePictures[this.state.titlePictures.indexOf(this.state.titlePicture)+1]})}} className="fas fa-arrow-alt-circle-right fa-3x text-center text-white bg-transparent border-0 p-0"></button>
+            </div>
+          </div>
+        </div>
+        : false}
+
       */}
             </ul>
             }

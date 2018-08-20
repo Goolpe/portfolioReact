@@ -235,6 +235,14 @@ button {
 #library .text-white {
   text-decoration: none; }
 
+.blackBG {
+  position: fixed;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  transition: 1s; }
+
 .form-inline .form-control {
   width: 700px !important; }
 
