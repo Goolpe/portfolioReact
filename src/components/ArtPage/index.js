@@ -20,7 +20,7 @@ class ArtPage extends Component{
         return response.json()
       })
       .then(json => {
-            this.setState({pictures: json.response.items});
+            this.setState({pictures: json.response.items.reverse()});
           })
   }
 
