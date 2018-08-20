@@ -15,10 +15,10 @@ class ArticlesPage extends Component {
 	    	<div className="card mb-5" key={article.id}>
 			  	<div className="card-body">
 			  		<div className="row">
-			  			<div className="col-3">
+			  			<div className="col-12 col-md-3 mb-3">
 			  				<img src={article.picture} alt="" />
 			  			</div>
-			  			<div className="col">
+			  			<div className="col-12 col-md-8">
 			  				<h5 className="card-title">{article.title}</h5>
 						    <p className="card-text ">{article.text}</p>
 						    <Link to={`/article/${index}`} className="btn btn-info">Читать дальше</Link>

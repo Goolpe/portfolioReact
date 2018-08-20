@@ -16,7 +16,7 @@ class Masters extends Component {
   }
   render(){
 	const masters = mastersJSON.map((thing, index) =>
-		<div className="col-4 mb-5" key={thing.id}>
+		<div className="col-12 col-md-6 col-lg-4 mb-5" key={thing.id}>
 			<Link to={`/master/${thing.name + "-" + index}`} className="text-white">
 				<div className="wrapper"  style={ { backgroundImage: `url(${thing.picture})`} }>
 					<div className="card d-flex align-items-center justify-content-center rounded-0" >

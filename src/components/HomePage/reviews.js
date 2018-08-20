@@ -89,7 +89,7 @@ class Reviews extends Component {
         >
         <div className="container">
           <div className="row">
-        		<div className="col-2"> <img src={item.src} className="img-fluid" alt={item.altText} /></div>
+        		<div className="d-none d-md-block"> <img src={item.src} className="img-fluid" alt={item.altText} /></div>
         		<div className="col">
               <div className="d-flex align-items-start flex-column bd-highlight" style={{height:"100%"}}>
                 <div className="bd-highlight mb-auto">{item.text} <br /></div>

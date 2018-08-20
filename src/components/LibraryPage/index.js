@@ -52,7 +52,7 @@ class LibraryPage extends Component{
     }
   render(){	
      const libraryBooks = books.map((book, index)=>
-        <div className="col-4 mb-5" key={book.id}>
+        <div className="col-12 col-md-6 col-lg-4 mb-5" key={book.id}>
           <a href={book.url} target="_blank" className="text-white">
             <div className="wrapper"  style={ { backgroundImage: `url(${book.picture})` }}>
               <div className="card d-flex align-items-center justify-content-center rounded-0" >

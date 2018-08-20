@@ -29,7 +29,7 @@ function Arts (props){
 		name: "СТРИМЫ"
 	}]
 	const arts = artsMems.map((thing) =>
-		<div className="col-6 p-0" key={thing.id}>
+		<div className="col-12 col-md-6 p-0" key={thing.id}>
 			<Link to={thing.link} className="text-white">
 			<div className="wrapper" style={ { backgroundImage: `url(${thing.url})` } }>
 				<div className="card rounded-0 border-0" >

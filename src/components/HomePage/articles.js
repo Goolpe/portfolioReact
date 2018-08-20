@@ -16,7 +16,7 @@ class Articles extends Component {
   }
   render() {
 	 const listItems = articles.map((article, index)=>
-		    		<div className="col-3" key={article.id}>
+		    		<div className="col-12 col-md-6 col-lg-3 mb-2" key={article.id}>
 						<div className="card rounded-0" style={ { backgroundImage: `url(${article.picture})` } }>
 						  	<div className="card-body font-weight-bold">
 							    <h6 className="card-subtitle mb-2 text-muted">{article.date}</h6>

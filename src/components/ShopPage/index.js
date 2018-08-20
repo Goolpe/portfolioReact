@@ -3,7 +3,7 @@ import shop from "./shop.json"
 
 function ShopPage(props){
 	  const listItems = shop.map((thing) =>
-	    	<div className="col-4" key={thing.id}>
+	    	<div className="col-12 col-md-4" key={thing.id}>
 				<div className="card text-center">
 				  <img className="card-img-top" src={thing.picture} alt={thing.title} />
 				  <div className="card-body">

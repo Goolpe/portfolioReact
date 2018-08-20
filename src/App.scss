@@ -2,7 +2,6 @@
 @font-face
 {
     font-family: Albertusfont;
-
     src: url(Albertusfont.otf);
 }
 
@@ -12,33 +11,6 @@ body
     font-weight: 200 !important;
 
     letter-spacing: 1px;
-}
-@-webkit-keyframes move
-{
-    from
-    {
-        top: 10px;
-        left: 12px;
-    }
-    to
-    {
-        top: 25px;
-        left: 12px;
-    }
-}
-
-@keyframes move
-{
-    from
-    {
-        top: 10px;
-        left: 12px;
-    }
-    to
-    {
-        top: 25px;
-        left: 12px;
-    }
 }
 
 ul
@@ -50,7 +22,6 @@ button
 {
     cursor: pointer;
 }
-
 
 .navbar .container
 {
@@ -70,10 +41,8 @@ button
 
 .carousel-item
 {
-    height: 600px;
+    max-height: 600px;
 }
-
-
 
 .header_works__head_name
 {

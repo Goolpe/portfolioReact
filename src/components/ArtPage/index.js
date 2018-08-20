@@ -15,7 +15,7 @@ class ArtPage extends Component{
   }
   componentDidMount () {
     window.scrollTo(0,0);
-    
+
     fetchJsonp('https://api.vk.com/method/photos.get?owner_id=-117179920&album_id=246570102&access_token=0989ad1e0989ad1e0989ad1ead09ec15a7009890989ad1e52f0d8c1830196143cdb8f23&v=5.52')
       .then(function(response) {
         return response.json()
@@ -75,7 +75,7 @@ class ArtPage extends Component{
         <div className="container">
           <div className="row">
             {this.state.pictures.map((img, index) => 
-              <div className="col-3 mb-4" key={img.id}>
+              <div className="col-12 col-md-6 col-lg-4 mb-4" key={img.id}>
                 <Card style = {{height : "250px"}}>
                   <button onClick={()=>{
                   this.setState({ bigPicture: true, selectedIndex: index })}} className="text-center border-0" title={img.text}  style={{ height:"100%", backgroundPosition: "top", backgroundImage: `url(${img.photo_604})` }}></button>

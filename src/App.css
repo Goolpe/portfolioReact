@@ -6,20 +6,6 @@ body {
   font-weight: 200 !important;
   letter-spacing: 1px; }
 
-@-webkit-keyframes move {
-  from {
-    top: 10px;
-    left: 12px; }
-  to {
-    top: 25px;
-    left: 12px; } }
-@keyframes move {
-  from {
-    top: 10px;
-    left: 12px; }
-  to {
-    top: 25px;
-    left: 12px; } }
 ul {
   padding: 0; }
 
@@ -38,7 +24,7 @@ button {
   background-size: cover; }
 
 .carousel-item {
-  height: 600px; }
+  max-height: 600px; }
 
 .header_works__head_name {
   padding-top: 250px; }
