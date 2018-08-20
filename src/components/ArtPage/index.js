@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import { Card, CardImg} from 'reactstrap';
+import { Card } from 'reactstrap';
 import fetchJsonp from 'fetch-jsonp';
 
 class ArtPage extends Component{
@@ -15,6 +14,8 @@ class ArtPage extends Component{
       this._ToggleNext = this._ToggleNext.bind(this);
   }
   componentDidMount () {
+    window.scrollTo(0,0);
+    
     fetchJsonp('https://api.vk.com/method/photos.get?owner_id=-117179920&album_id=246570102&access_token=0989ad1e0989ad1e0989ad1ead09ec15a7009890989ad1e52f0d8c1830196143cdb8f23&v=5.52')
       .then(function(response) {
         return response.json()
@@ -25,7 +26,7 @@ class ArtPage extends Component{
   }
 
   _ToggleNext() {
-      if(this.state.selectedIndex == this.state.pictures.length - 1)
+      if(this.state.selectedIndex === this.state.pictures.length - 1)
         return;
 
       this.setState(prevState => ({
@@ -34,7 +35,7 @@ class ArtPage extends Component{
   }
 
   _TogglePrev() {
-      if(this.state.selectedIndex == 0)
+      if(this.state.selectedIndex === 0)
        return;
 
       this.setState(prevState => ({
@@ -55,7 +56,7 @@ class ArtPage extends Component{
             <div className="col-4 d-flex align-items-center justify-content-center" style={{height: "100%", cursor: "pointer"}}>            
                   <div className="row">
                     <div className="col-10" onClick={this._ToggleNext}>
-                      <img src={this.state.pictures[this.state.selectedIndex].photo_604} className="img-fluid"/>
+                      <img src={this.state.pictures[this.state.selectedIndex].photo_604} alt={this.state.pictures[this.state.selectedIndex].text} className="img-fluid"/>
                       <p className=" mt-2">{this.state.pictures[this.state.selectedIndex].text}</p>
                     </div>
                     <div className="col-2">
