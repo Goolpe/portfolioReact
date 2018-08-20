@@ -26,7 +26,7 @@ class App extends Component {
       <Router>
       <div>
         <Navigation/> 
-        <section id="content">
+
           <Route path="/" exact={true} component={HomePage} />
           <Route path="/about-project" component={AboutPage} />
           <Route path="/library" component={LibraryPage} />
@@ -38,7 +38,7 @@ class App extends Component {
           <Route path="/masters" component={MastersPage} />
           <Route path="/master/:id" component={MasterPage} />
           <Route path="/support" component={SupportPage} />
-        </section>
+
         <Footer />
       </div>
       </Router>
