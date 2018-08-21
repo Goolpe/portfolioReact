@@ -213,15 +213,22 @@ footer
     background-color: #000;
 }
 
+@media (max-width: 1199.98px) {
+     h1{
+        font-size: 16px !important;
+    }
+}
+
 @media (max-width: 991.98px) { 
     html {
         font-size: 14px;
     } 
+
     body, .btn{
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
     h1{
-        font-size: 16px !important;
+        font-size: 22px !important;
     }
     h2{
         font-size: 15px !important;
@@ -237,18 +244,12 @@ footer
 
 }
 @media (max-width: 767.98px) { 
- 
+    
     #reviews .carousel-inner
     {
         height: 120px;
     }   
     #articlesPage .text-right{
         text-align: left !important;
-    }
-}
-
-@media (max-width: 1199.98px) {
-     h1{
-        font-size: 16px !important;
     }
 }

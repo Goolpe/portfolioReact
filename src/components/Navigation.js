@@ -45,13 +45,13 @@ class Navigation extends Component{
                 <Collapse isOpen={this.state.isOpen} navbar>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
-                      <NavLink tag={Link} onClick={this.closeNav} to="/" className="bg-transparent border-0 nav-link text-white">ГЛАВНАЯ</NavLink>
+                      <NavLink tag={Link} onClick={this.closeNav} to="/" className="bg-transparent border-0 nav-link text-white btn btn-link">ГЛАВНАЯ</NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink tag={Link} onClick={this.closeNav} to="/about-project" className="bg-transparent border-0 nav-link text-white">О ПРОЕКТЕ</NavLink>
+                      <NavLink tag={Link} onClick={this.closeNav} to="/about-project" className="bg-transparent border-0 nav-link text-white btn btn-link">О ПРОЕКТЕ</NavLink>
                     </NavItem>
                     <UncontrolledDropdown nav inNavbar>
-                      <DropdownToggle className="text-white" nav caret>НАВИГАЦИЯ</DropdownToggle>
+                      <DropdownToggle className="text-white btn btn-link" nav caret>НАВИГАЦИЯ</DropdownToggle>
                       <DropdownMenu  className="p-0">
                         <DropdownItem tag={Link} onClick={this.closeNav} to="/library" className="p-2 rounded-top">БИБЛИОТЕКА</DropdownItem> 
                         <DropdownItem tag={Link} onClick={this.closeNav} to="/masters" className="p-2">РЕЗЮМЕ МАСТЕРОВ</DropdownItem>
@@ -60,10 +60,10 @@ class Navigation extends Component{
                       </DropdownMenu>
                     </UncontrolledDropdown>
                     <NavItem>
-                      <NavLink tag={Link} onClick={this.closeNav} to="/streams" className="nav-link text-white">СТРИМЫ</NavLink>
+                      <NavLink tag={Link} onClick={this.closeNav} to="/streams" className="nav-link text-white btn btn-link">СТРИМЫ</NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink tag={Link} onClick={this.closeNav} to="/articles" className="nav-link text-white">СТАТЬИ</NavLink>
+                      <NavLink tag={Link} onClick={this.closeNav} to="/articles" className="nav-link text-white btn btn-link">СТАТЬИ</NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink tag={Link} onClick={this.closeNav} to="/shop" className="nav-link text-white btn btn-danger rounded">МАГАЗИН</NavLink>
