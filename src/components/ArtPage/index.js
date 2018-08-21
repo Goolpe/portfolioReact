@@ -45,9 +45,9 @@ class ArtPage extends Component{
 
   render () {
     return (
-      <div id="artpage" style={{minHeight:"100vh", marginTop: "-85px"}}>
-       {this.state.bigPicture ? 
-        <div className="blackBG">
+      <div id="artpage" style={{minHeight:"100vh"}}>
+       {this.state.bigPicture && 
+        <div className="blackBG" style={{marginTop: "-85px"}}>
           <div className="row text-center text-white" style={{height: "100%"}}>
             <div className="col-1 col-md-4 d-flex align-items-center justify-content-center " style={{height: "100%", cursor: "pointer"}}  onClick={this._TogglePrev}>
                <button className="fas fa-chevron-left fa-3x bg-transparent text-center text-white border-0 p-0"></button>
@@ -69,8 +69,7 @@ class ArtPage extends Component{
               <button className="fas fa-chevron-right fa-3x text-center text-white bg-transparent border-0 p-0"></button> 
             </div>
           </div>
-        </div>
-        : false}
+        </div>}
 
         <h1 className="text-center pt-5 mb-5">АРТ</h1>
         <div className="container">

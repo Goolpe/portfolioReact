@@ -27,8 +27,8 @@ class ArticlesPage extends Component {
 			  	</div>
 			  	<div className="card-footer text-primary">
 			    	<div className="row">
-			    		<div className="col-6 text-muted">{article.date}</div>
-			    		<div className="col text-right">{article.hashtags}</div>
+			    		<div className="col-12 col-md-6 text-muted mb-2">{article.date}</div>
+			    		<div className="col-12 col-md-6 text-right">{article.hashtags}</div>
 			    	</div>
 			  	</div>	
 			</div>

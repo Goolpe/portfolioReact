@@ -21,7 +21,6 @@ class ArticlePage extends Component {
 	  	<div className="container mt-5 mb-5" style={{minHeight: "100vh"}}>
       <Link to="/articles" className="text-dark"><i className="text-dark fas fa-angle-left "></i> ВСЕ СТАТЬИ</Link>
 	  	<h1 className="text-center m-5">{articles[id].title}</h1>
-	  		
     		{articles[id].text}
     	</div>
     	</section>
