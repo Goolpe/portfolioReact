@@ -37,6 +37,11 @@ button
     background-size: cover;
 }
 
+.carousel,
+.carousel-inner{
+    height:100%;
+}
+
 .carousel-item
 {
     max-height: 600px;
