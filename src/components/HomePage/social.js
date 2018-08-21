@@ -7,8 +7,8 @@ class Social extends Component {
     return (
 	    	<section id="social" className="pt-5 pb-5" >
 	    		<div className="container text-white text-center">
-	    			<div className="row">
-	    				<div className="col-12 col-md-6 mb-3">
+	    			<div className="row mt-3">
+	    				<div className="col-12 col-md-6  mb-3">
 	    					<h2>RANDOM RULES В СОЦСЕТЯХ:</h2> 
 	    				</div>
 	    				<div className="col-12 col-md-6">
