@@ -203,7 +203,14 @@ button
 {
     width: 700px !important;
 }
+
 footer
 {
     background-color: #000;
+}
+
+@media (max-width: 991.98px) { 
+    #channels iframe{
+        width: 100%;
+    }
 }
