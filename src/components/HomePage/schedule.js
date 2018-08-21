@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {
+  Link
+} from 'react-router-dom';
 
 class Schedule extends Component {
 	constructor(props){
@@ -44,8 +47,8 @@ class Schedule extends Component {
 			    		<h2  className="display-4">0 дней</h2>
 			    		<br />
 						<div className="row ">
-							<div className="col-12 col-md-4 mb-3 order-md-1"><a href=""><i className="fab fa-youtube text-danger fa-2x"> YOUTUBE</i></a></div>
-							<div className="col-12 col-md-4 mb-3 order-md-3"><a href=""><i className="fab fa-twitch text-info fa-2x"> TWITCH</i></a></div>
+							<div className="col-12 col-md-4 mb-3 order-md-1"><Link to="/streams"><i className="fab fa-youtube text-danger fa-2x"> YOUTUBE</i></Link></div>
+							<div className="col-12 col-md-4 mb-3 order-md-3"><Link to="/streams"><i className="fab fa-twitch text-info fa-2x"> TWITCH</i></Link></div>
 							<div className="col-12 col-md-4 mb-3 order-md-2"><a className="btn btn-outline-secondary p-3">ПОДПИСАТЬСЯ НА ОБНОВЛЕНИЯ</a></div>
 						</div>
 			   		</div>
