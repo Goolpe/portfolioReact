@@ -38,7 +38,7 @@ class Navigation extends Component{
     return(
       <div className="header_works">
           <div className="header__wrapper">
-            <Navbar color="light" className="bg-Nav" light expand="lg">
+            <Navbar color="dark" className="bg-Nav" light expand="lg">
               <div className="container">
                 <NavbarBrand tag={Link} onClick={this.closeNav} to="/" className="navbar-brand"><img src="../logo.png" alt="ГЛАВНАЯ"/></NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />

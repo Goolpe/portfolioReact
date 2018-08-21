@@ -31,8 +31,11 @@ class MasterPage extends Component {
 	  return (
 	  <section id="masterPage">	  
 	  	<div className="container mt-5 mb-5">
-  	  	<Link to="/masters" className="text-dark"><i className="text-dark fas fa-angle-left "></i> ДРУГИЕ МАСТЕРА</Link>
-        <h1 className="text-center mb-5">{mastersJSON[id].name}</h1>
+        <div className="row mb-5 justify-content-center align-items-start">
+    	  	<div className="col-12 col-md-4 text-left mb-4"><Link to="/masters" className="text-dark"><i className="fas fa-angle-left "></i> ДРУГИЕ МАСТЕРА</Link></div>
+          <div className="col-12 col-md-4 text-center" ><h1>{mastersJSON[id].name}</h1></div>
+          <div  className="col-12 col-md-4" ></div>
+        </div>
           <div className="row">
             <div className="col-12 col-md-6 order-md-2 mb-3 text-center">
               <img src={mastersJSON[id].picture} className="img-fluid" style={{maxHeight: 500}} alt="" />
@@ -54,9 +57,9 @@ class MasterPage extends Component {
             </div>
           
         </div>
-          <div className="row">
-            {masterYoutube}
-          </div>
+        <div className="row">
+          {masterYoutube}
+        </div>
     	</div>
     	</section>
 	  );

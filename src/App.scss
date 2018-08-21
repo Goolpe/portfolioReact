@@ -151,6 +151,11 @@ button
     height: 300px;
 }
 
+#aboutPage p{
+    text-indent: 1.5em;
+    text-align: justify;
+}
+
 #masters .wrapper, #library .wrapper
 {
     height: 400px;
@@ -215,7 +220,7 @@ footer
 
 @media (max-width: 1199.98px) {
      h1{
-        font-size: 16px !important;
+        font-size: 26px !important;
     }
 }
 
