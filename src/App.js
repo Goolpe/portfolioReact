@@ -18,7 +18,6 @@ import MastersPage from './components/MastersPage';
 import MasterPage from './components/MastersPage/MasterPage';
 import SupportPage from './components/SupportPage';
 
-import './App.css';
 
 class App extends Component {
   render() {  
