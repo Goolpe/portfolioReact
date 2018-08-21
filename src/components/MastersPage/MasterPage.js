@@ -35,7 +35,7 @@ class MasterPage extends Component {
         <h1 className="text-center mb-5">{mastersJSON[id].name}</h1>
           <div className="row">
             <div className="col-12 col-md-6 order-md-2 mb-3 text-center">
-              <img src={mastersJSON[id].picture} style={{height: 500}} alt="" />
+              <img src={mastersJSON[id].picture} className="img-fluid" style={{maxHeight: 500}} alt="" />
             </div>
             <div className="col-12 col-md-6">
         	  	<h3 className="mb-4">Контакты:</h3>
