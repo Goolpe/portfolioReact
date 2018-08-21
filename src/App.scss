@@ -7,7 +7,6 @@
 body{
     font-family: Albertusfont !important;
     font-weight: 200 !important;
-
     letter-spacing: 1px;
 }
 
@@ -42,7 +41,7 @@ button
     height:100%;
 }
 
-.carousel-item
+#index .carousel-item
 {
     max-height: 600px;
 }
@@ -215,7 +214,32 @@ footer
 }
 
 @media (max-width: 991.98px) { 
+    html {
+        font-size: 14px;
+    } 
+    body, .btn{
+        font-size: 10px !important;
+    }
+    h1{
+        font-size: 16px !important;
+    }
+    h2{
+        font-size: 15px !important;
+    }
+
     #channels iframe{
         width: 100%;
     }
+
+    #social a{
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 767.98px) { 
+ 
+    #reviews .carousel-inner
+    {
+        height: 120px;
+    }   
 }

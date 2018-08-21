@@ -43,11 +43,10 @@ class Schedule extends Component {
 			    		<h1>ДО СЛЕДУЮЩЕЙ ИГРЫ ОСТАЛОСЬ:</h1><br /> 
 			    		<h2  className="display-4">{this.date()}</h2>
 			    		<br />
-						<div>
-							<a href=""><i className="fab fa-youtube text-danger fa-2x mr-4"> YOUTUBE</i></a>
-							
-							<a className="btn btn-outline-secondary mr-4 p-3">ПОДПИСАТЬСЯ НА ОБНОВЛЕНИЯ</a>
-							<a href=""><i className="fab fa-twitch text-info fa-2x"> TWITCH</i></a>
+						<div className="row ">
+							<div className="col-12 col-md-4 mb-3 order-md-1"><a href=""><i className="fab fa-youtube text-danger fa-2x"> YOUTUBE</i></a></div>
+							<div className="col-12 col-md-4 mb-3 order-md-3"><a href=""><i className="fab fa-twitch text-info fa-2x"> TWITCH</i></a></div>
+							<div className="col-12 col-md-4 mb-3 order-md-2"><a className="btn btn-outline-secondary p-3">ПОДПИСАТЬСЯ НА ОБНОВЛЕНИЯ</a></div>
 						</div>
 			   		</div>
 		   		</div>

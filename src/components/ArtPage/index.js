@@ -45,26 +45,27 @@ class ArtPage extends Component{
 
   render () {
     return (
-      <div id="artpage" style={{minHeight:"100vh"}}>
+      <div id="artpage" style={{minHeight:"100vh", marginTop: "-85px"}}>
        {this.state.bigPicture ? 
         <div className="blackBG">
-          <div className="row align-items-center text-center text-white" style={{height: "100%"}}>
-
-            <div className="col-4 d-flex align-items-center justify-content-center" style={{height: "100%", cursor: "pointer"}}  onClick={this._TogglePrev}>
+          <div className="row text-center text-white" style={{height: "100%"}}>
+            <div className="col-1 col-md-4 d-flex align-items-center justify-content-center " style={{height: "100%", cursor: "pointer"}}  onClick={this._TogglePrev}>
                <button className="fas fa-chevron-left fa-3x bg-transparent text-center text-white border-0 p-0"></button>
             </div>
-            <div className="col-4 d-flex align-items-center justify-content-center" style={{height: "100%", cursor: "pointer"}}>            
-                  <div className="row">
-                    <div className="col-10" onClick={this._ToggleNext}>
-                      <img src={this.state.pictures[this.state.selectedIndex].photo_604} alt={this.state.pictures[this.state.selectedIndex].text} className="img-fluid"/>
-                      <p className=" mt-2">{this.state.pictures[this.state.selectedIndex].text}</p>
-                    </div>
-                    <div className="col-2">
-                      <button onClick={()=>{this.setState({bigPicture: false})}} className="fas fa-times-circle fa-3x text-center text-white bg-transparent border-0 p-0"></button>
-                    </div>
-                  </div>
+            <div className="col-10 col-md-4 d-flex align-items-center justify-content-center" style={{height: "100%", cursor: "pointer"}}>    
+                        
+              <div className="row"> 
+                <div className="col-12">
+                  <img src={this.state.pictures[this.state.selectedIndex].photo_604} alt={this.state.pictures[this.state.selectedIndex].text} className="img-fluid"/>
+                  <div onClick={()=>{this.setState({bigPicture: false})}} className="fixed-top fas fa-times-circle fa-4x text-center text-white bg-transparent border-0 p-0" style={{top: "50px", left: "60%"}}></div>
+                </div>
+                <div className="col-12">
+                  <p className=" mt-2">{this.state.pictures[this.state.selectedIndex].text}</p>
+                </div>
+              </div>
+
             </div> 
-            <div className="col-4 d-flex align-items-center justify-content-center" style={{height: "100%", cursor: "pointer"}} onClick={this._ToggleNext}>
+            <div className="col-1 col-md-4 d-flex align-items-center justify-content-center"  style={{height: "100%", cursor: "pointer"}} onClick={this._ToggleNext}>
               <button className="fas fa-chevron-right fa-3x text-center text-white bg-transparent border-0 p-0"></button> 
             </div>
           </div>
