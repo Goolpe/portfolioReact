@@ -5,7 +5,6 @@ const db = require('./db');
 const MongoClient = require ('mongodb').MongoClient;
 const mongoose = require('mongoose');
 const articlesController = require('./controllers/articles');
-const pwd = require('./pwd');
 
 const app = express();
 const port = process.env.PORT || 5000;
