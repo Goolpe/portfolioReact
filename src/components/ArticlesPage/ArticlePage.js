@@ -4,8 +4,6 @@ import {
     Link,
 } from 'react-router-dom';
 
-
-
 class ArticlePage extends Component {
   constructor(props){
     super(props);
@@ -16,7 +14,7 @@ class ArticlePage extends Component {
   componentDidMount() {
     window.scrollTo(0,0);
     const id = this.props.match.params.id
-    axios.get("/articles/" + id)
+    axios.get("//localhost:3333/articles/" + id)
     .then(res => this.setState({articles: res.data}))
   }
   render() {

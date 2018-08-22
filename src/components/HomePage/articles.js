@@ -13,7 +13,7 @@ class Articles extends Component {
   componentDidMount() {
     window.scrollTo(0,0);
 
-    fetch('/articles')
+    fetch('//localhost:3333/articles')
 		.then(response => response.json())
 		.then(data => 
 			this.setState({articles: data.reverse()}))
