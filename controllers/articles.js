@@ -1,4 +1,4 @@
-const Articles = require('../models/Articles');
+const Articles = require('../models/articles');
 
 exports.all = function(req, res){
 	Articles.all(function(err, docs){
