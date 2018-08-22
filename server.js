@@ -28,7 +28,7 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-const dbConnUrl = process.env.MONGOLAB_URI || pwd
+const dbConnUrl = process.env.MONGOLAB_URI || 'mongodb://@localhost:27017/articles'
 
 db.connect(dbConnUrl, function (err){
 	if (err){

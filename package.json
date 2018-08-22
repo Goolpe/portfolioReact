@@ -7,7 +7,6 @@
     "email": "esausilva85@gmail.com",
     "url": "https://esausilva.com"
   },
-  "license": "MIT",
   "scripts": {
     "client": "cd client && npm start",
     "server": "nodemon server.js",
