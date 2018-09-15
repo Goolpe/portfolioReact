@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
-
+import About from './About';
+import Header from './Header';
 
 class HomePage extends Component{
+	constructor(props){
+		super(props);
+	}
 	render(){
 		return(
 			<div id="HomePage">
-				<p>Hi</p>
+				<Header />
+				<About />
 			</div>
 		)
 	}

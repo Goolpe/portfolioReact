@@ -1,5 +1,68 @@
-body {
+p,body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Candal', sans-serif;
+}
+
+section{
+	height:100vh;
+}
+
+#Header{
+	background: url("./bg.jpeg") no-repeat;
+	background-size: cover;
+}
+
+#Header .wrapper{
+	background: rgb(32,35,44);
+	mix-blend-mode: multiply;
+	height:100vh;
+	animation: darkShow 4s ease alternate;
+}
+#Header .d-flex{
+	height:100%;
+}
+
+#Header h1{
+	font-size: 12em;
+}
+
+h1 {
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+h1 { 
+  animation: showup 7s;
+}
+
+h1 span{
+  animation: slidein 7s;
+}
+
+@keyframes darkShow {
+    0% {background: rgba(32,35,44,0);}
+    100% {background: rgb(32,35,44);}
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:1;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes slideup {
+    100% { transform: translateY(-30px); }
+}
+#Header p{
+	top: 80vh;
+	animation: slideup 2s linear alternate infinite;
 }

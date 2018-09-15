@@ -6,15 +6,19 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom';
-import HomePage from './components/HomePage'
+import HomePage from './components/HomePage';
+import Navigation from './components/Navigation';
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <Switch>
-          <Route path="/" exact={true} component={HomePage} />
-        </Switch>
+        <React.Fragment>
+          <Navigation/>
+          <Switch>
+            <Route path="/" exact={true} component={HomePage} />
+          </Switch>
+        </React.Fragment>
       </Router>
     );
   }
