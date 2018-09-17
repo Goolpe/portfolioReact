@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaGithubAlt, FaLinkedinIn } from 'react-icons/fa';
-import { FiUser, FiEye} from "react-icons/fi";
+import { FiUser, FiEye, FiMail} from "react-icons/fi";
 import { UncontrolledTooltip } from 'reactstrap';
 
 class Navigation extends Component{
@@ -35,6 +35,10 @@ class Navigation extends Component{
 						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipPortfolio">
 					        Portfolio
 					    </UncontrolledTooltip> 
+					    <li className="pb-2 pt-2" id="TooltipContacts"><Link to="/contacts"><FiMail color="white" size="1.2em"/></Link></li>
+						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipContacts">
+					        Contacts
+					    </UncontrolledTooltip>
 					</ul>
 					<ul className="text-center">
 						<li className="pb-2 pt-2" id="TooltipCV"><a href="https://drive.google.com/file/d/19JZKoj07JXDcXXVxltXzKr5bAzXOhJ6R/view?usp=sharing" rel="noopener noreferrer" target="_blank">CV</a></li>

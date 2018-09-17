@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import works from './works.json';
-import { Nav, NavItem, NavLink, Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Nav, NavItem, NavLink, Card, CardImg, CardBody,
+  CardTitle } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 class Works extends Component{
@@ -15,14 +15,14 @@ class Works extends Component{
 	}
 	render(){
 		const itemList = works.filter(work=>
-		this.state.Allactive && work.type ||
-		this.state.SPAactive && work.type == "SPA" || 
-		this.state.Shopactive && work.type == "Shop"
+		this.state.Allactive ? work.type :
+		this.state.SPAactive ? work.type === "SPA" : 
+		this.state.Shopactive && work.type === "Shop"
 			).map((work,index)=>
 			<div className="col-12 col-md-4 mt-4" key={index}>
 				<Link to={`/work/${work.id}`}>
-					<Card className="bg-dark text-white shadow">
-				        <div style={{height:"200px", overflow: "hidden"}}><CardImg top width="100%" src={work.picture} alt="Card image cap" /></div>
+					<Card className="bg-dark text-white shadow rounded-0">
+				        <div style={{height:"200px", overflow: "hidden"}}><CardImg top width="100%" src={work.picture} className="rounded-0" alt="Card image cap" /></div>
 				        <CardBody className="text-left">
 				          <CardTitle>{work.title}</CardTitle>
 				        </CardBody>

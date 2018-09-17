@@ -1,20 +1,15 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Home extends Component{
-	constructor(props){
-		super(props);
-	}
-	render(){
+function Home(props){
 		return(
-			<div id="Home">
+			<section id="Home">
 				<div className="wrapper text-center text-white">
 					<div className="d-flex justify-content-center ">
-						<h1 className="align-self-center font-weight-bold"><span>ARTUR | DEV</span></h1>
+						<h1 className="align-self-center font-weight-bold"><span>ARTUR | DEVELOPER</span></h1>
 					</div>
 				</div>
-			</div>
+			</section>
 		)
-	}
 }
 
 export default Home;

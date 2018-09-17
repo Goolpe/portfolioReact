@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa';
 
 class About extends Component{
 	render(){
