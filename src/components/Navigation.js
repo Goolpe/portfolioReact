@@ -22,10 +22,7 @@ class Navigation extends Component{
 			<div id="Navigation" className="position-absolute">
 				<div className="d-flex flex-column justify-content-between" style={{height: "100%"}}>
 					<ul className="text-center">
-						<li className="pb-2 pt-2 text-white" id="TooltipNick">G</li>
-						<UncontrolledTooltip placement="right" target="TooltipNick">
-					        Goolpe
-					    </UncontrolledTooltip>
+						<li className="pb-2 pt-2 text-white">G</li>
 						<Link to="/" ><li className="pb-2 pt-2" id="TooltipHome"><FaHome color="white" size="1.2em"/></li></Link>
 						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipHome">
 					        Home
