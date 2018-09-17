@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 
-class HomePage extends Component{
+class Home extends Component{
 	constructor(props){
 		super(props);
 	}
 	render(){
 		return(
-			<div id="HomePage">
+			<div id="Home">
 				<div className="wrapper text-center text-white">
 					<div className="d-flex justify-content-center ">
 						<h1 className="align-self-center font-weight-bold"><span>ARTUR | DEV</span></h1>
@@ -17,4 +17,4 @@ class HomePage extends Component{
 	}
 }
 
-export default HomePage;
+export default Home;

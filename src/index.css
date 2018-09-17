@@ -1,7 +1,7 @@
 p,body {
   margin: 0;
   padding: 0;
-  font-family: 'Candal', sans-serif;
+  font-family: 'Allerta Stencil', sans-serif !important;
 }
 
 a{
@@ -24,13 +24,13 @@ section{
 	z-index: 999;
 }
 
-#HomePage{
+#Home{
 	background: url("./bg.jpeg") no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
 
-#HomePage .wrapper{
+#Home .wrapper{
 	background: rgb(32,35,44);
 	mix-blend-mode: multiply;
 	height:100vh;
@@ -42,18 +42,18 @@ section{
     100% {background: rgb(32,35,44);}
 }
 
-#HomePage .d-flex{
+#Home .d-flex{
 	height:100%;
 }
 
-#HomePage h1{
+#Home h1{
 	font-size: 12em;
 	overflow:hidden;
   	white-space:nowrap;
   	animation: showup 7s;
 }
 
-#HomePage h1 span{
+#Home h1 span{
   animation: slidein 7s;
 }
 
@@ -70,6 +70,10 @@ section{
     20% { margin-left:-800px; }
     35% { margin-left:0px; }
     100% { margin-left:0px; }
+}
+
+.headPage{
+	height: 200px;
 }
 
 .pageOption {

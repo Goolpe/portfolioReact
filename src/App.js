@@ -6,7 +6,9 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom';
-import HomePage from './components/HomePage';
+import Home from './components/Home';
+import About from './components/About';
+import Works from './components/Works';
 import Navigation from './components/Navigation';
 
 class App extends Component {
@@ -16,7 +18,9 @@ class App extends Component {
         <React.Fragment>
           <Navigation/>
           <Switch>
-            <Route path="/" exact={true} component={HomePage} />
+            <Route path="/" exact={true} component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/works" component={Works} />
           </Switch>
         </React.Fragment>
       </Router>

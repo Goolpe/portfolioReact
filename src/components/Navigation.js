@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import { FaHome, FaCog, FaGithubAlt, FaLinkedinIn } from 'react-icons/fa';
-import { FiUser } from "react-icons/fi";
+import { FaHome, FaGithubAlt, FaLinkedinIn } from 'react-icons/fa';
+import { FiUser, FiEye} from "react-icons/fi";
 import { UncontrolledTooltip } from 'reactstrap';
 
 class Navigation extends Component{
@@ -31,9 +31,9 @@ class Navigation extends Component{
 						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipAbout">
 					        About
 					    </UncontrolledTooltip>
-						<li className="pb-2 pt-2" id="TooltipResume"><Link to="/resume"><FaCog color="white" size="1.2em"/></Link></li>
-						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipResume">
-					        Resume
+						<li className="pb-2 pt-2" id="TooltipPortfolio"><Link to="/works"><FiEye color="white" size="1.2em"/></Link></li>
+						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipPortfolio">
+					        Portfolio
 					    </UncontrolledTooltip> 
 					</ul>
 					<ul className="text-center">
