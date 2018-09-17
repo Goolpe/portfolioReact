@@ -37,6 +37,10 @@ class Navigation extends Component{
 					    </UncontrolledTooltip> 
 					</ul>
 					<ul className="text-center">
+						<li className="pb-2 pt-2" id="TooltipCV"><a href="https://drive.google.com/file/d/19JZKoj07JXDcXXVxltXzKr5bAzXOhJ6R/view?usp=sharing" target="_blank">CV</a></li>
+						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipCV">
+					        Curriculum vitae
+					    </UncontrolledTooltip>
 						<li className="pb-2 pt-2" id="TooltipGithub"><a href="https://github.com/goolpe" target="_blank"><FaGithubAlt color="white" size="1.2em"/></a></li>
 						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipGithub">
 					        Github

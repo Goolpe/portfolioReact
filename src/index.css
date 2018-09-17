@@ -6,6 +6,7 @@ p,body {
 
 a{
 	color: #fff !important;
+	text-decoration: none !important;
 }
 
 ul{
