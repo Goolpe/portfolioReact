@@ -1,0 +1,32 @@
+[
+	{
+		"id":0,
+		"title":"asdasd",
+		"picture":"https://images.pexels.com/photos/162539/architecture-building-amsterdam-blue-sky-162539.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+		"type": "SPA"
+	},
+	{
+		"id":1,
+		"title":"asdasd",
+		"picture":"https://images.pexels.com/photos/162539/architecture-building-amsterdam-blue-sky-162539.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+		"type": "Shop"
+	},
+	{
+		"id":2,
+		"title":"asdasd",
+		"picture":"https://images.pexels.com/photos/162539/architecture-building-amsterdam-blue-sky-162539.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+		"type": "SPA"
+	},
+	{
+		"id":3,
+		"title":"asdasd",
+		"picture":"https://images.pexels.com/photos/162539/architecture-building-amsterdam-blue-sky-162539.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+		"type": "SPA"
+	},
+	{
+		"id":4,
+		"title":"asdasd",
+		"picture":"https://images.pexels.com/photos/162539/architecture-building-amsterdam-blue-sky-162539.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+		"type": "SPA"
+	}
+]
