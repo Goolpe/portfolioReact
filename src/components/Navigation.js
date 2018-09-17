@@ -22,34 +22,37 @@ class Navigation extends Component{
 			<div id="Navigation" className="position-absolute">
 				<div className="d-flex flex-column justify-content-between" style={{height: "100%"}}>
 					<ul className="text-center">
-						<li className="pb-3 pt-3"><Link to="/">G</Link></li>
-						<li className="pb-2 pt-2" id="TooltipHome"><Link to="/" ><FaHome color="white" size="1.2em"/></Link></li>
+						<li className="pb-2 pt-2 text-white" id="TooltipNick">G</li>
+						<UncontrolledTooltip placement="right" target="TooltipNick">
+					        Goolpe
+					    </UncontrolledTooltip>
+						<Link to="/" ><li className="pb-2 pt-2" id="TooltipHome"><FaHome color="white" size="1.2em"/></li></Link>
 						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipHome">
 					        Home
 					    </UncontrolledTooltip>
-						<li className="pb-2 pt-2" id="TooltipAbout"><Link to="/about"><FiUser color="white" size="1.2em"/></Link></li>
+						<Link to="/about"><li className="pb-2 pt-2" id="TooltipAbout"><FiUser color="white" size="1.2em"/></li></Link>
 						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipAbout">
 					        About
 					    </UncontrolledTooltip>
-						<li className="pb-2 pt-2" id="TooltipPortfolio"><Link to="/works"><FiEye color="white" size="1.2em"/></Link></li>
+						<Link to="/works"><li className="pb-2 pt-2" id="TooltipPortfolio"><FiEye color="white" size="1.2em"/></li></Link>
 						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipPortfolio">
 					        Portfolio
 					    </UncontrolledTooltip> 
-					    <li className="pb-2 pt-2" id="TooltipContacts"><Link to="/contacts"><FiMail color="white" size="1.2em"/></Link></li>
+					    <Link to="/contacts"><li className="pb-2 pt-2" id="TooltipContacts"><FiMail color="white" size="1.2em"/></li></Link>
 						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipContacts">
 					        Contacts
 					    </UncontrolledTooltip>
 					</ul>
 					<ul className="text-center">
-						<li className="pb-2 pt-2" id="TooltipCV"><a href="https://drive.google.com/file/d/19JZKoj07JXDcXXVxltXzKr5bAzXOhJ6R/view?usp=sharing" rel="noopener noreferrer" target="_blank">CV</a></li>
+						<a href="https://drive.google.com/file/d/19JZKoj07JXDcXXVxltXzKr5bAzXOhJ6R/view?usp=sharing" rel="noopener noreferrer" target="_blank"><li className="pb-2 pt-2" id="TooltipCV">CV</li></a>
 						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipCV">
 					        Curriculum vitae
 					    </UncontrolledTooltip>
-						<li className="pb-2 pt-2" id="TooltipGithub"><a href="https://github.com/goolpe" rel="noopener noreferrer" target="_blank"><FaGithubAlt color="white" size="1.2em"/></a></li>
+						<a href="https://github.com/goolpe" rel="noopener noreferrer" target="_blank"><li className="pb-2 pt-2" id="TooltipGithub"><FaGithubAlt color="white" size="1.2em"/></li></a>
 						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipGithub">
 					        Github
 					    </UncontrolledTooltip>
-						<li className="pb-2 pt-2" id="TooltipLinkedin"><a href="https://www.linkedin.com/goolpe" rel="noopener noreferrer" target="_blank"><FaLinkedinIn color="white" size="1.2em"/></a></li>
+						<a href="https://www.linkedin.com/goolpe" rel="noopener noreferrer" target="_blank"><li className="pb-2 pt-2" id="TooltipLinkedin"><FaLinkedinIn color="white" size="1.2em"/></li></a>
 						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipLinkedin">
 					        Linkedin
 					    </UncontrolledTooltip>

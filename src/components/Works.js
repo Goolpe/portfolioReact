@@ -19,10 +19,10 @@ class Works extends Component{
 		this.state.SPAactive ? work.type === "SPA" : 
 		this.state.Shopactive && work.type === "Shop"
 			).map((work,index)=>
-			<div className="col-12 col-md-4 mt-4" key={index}>
+			<div className="col-12 col-md-6 col-lg-4 mt-4" key={index}>
 				<Link to={`/work/${work.id}`}>
 					<Card className="bg-dark text-white shadow rounded-0">
-				        <div style={{height:"200px", overflow: "hidden"}}><CardImg top width="100%" src={work.picture} className="rounded-0" alt="Card image cap" /></div>
+				        <div style={{height:"200px", overflow: "hidden"}}><CardImg top src={work.picture} className="rounded-0" alt="Card image cap" /></div>
 				        <CardBody className="text-left">
 				          <CardTitle>{work.title}</CardTitle>
 				        </CardBody>

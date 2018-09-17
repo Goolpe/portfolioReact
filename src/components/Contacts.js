@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import { FiAtSign, FiMapPin, FiPhone, FiGithub, FiArrowRight } from "react-icons/fi";
+import { FiAtSign, FiMapPin, FiPhone, FiArrowRight } from "react-icons/fi";
+import { FaSkype } from 'react-icons/fa';
 import { Button, Form, FormGroup, Input } from 'reactstrap';
 
 class Contacts extends Component{
@@ -36,7 +37,7 @@ class Contacts extends Component{
 								<div className="d-flex">
 								<FiPhone size="3em" className="text-success mr-3"/>
 								<span>
-									<h5>Phone | WhatsApp | Telegram</h5>
+									<h5>Phone</h5>
 									<p className="text-muted m-0">+7 987 255-62-55</p>
 								</span>
 								</div>
@@ -45,10 +46,10 @@ class Contacts extends Component{
 						<div className="col-12 col-md-6">
 							<div className="bg-dark shadow p-3 mt-4">
 								<div className="d-flex">
-								<FiGithub size="3em" className="text-success mr-3"/>
+								<FaSkype size="3em" className="text-success mr-3"/>
 								<span>
-									<h5>Github</h5>
-									<p className="text-muted m-0">github.com/goolpe</p>
+									<h5>Skype</h5>
+									<p className="text-muted m-0">gooolpe</p>
 								</span>
 								</div>
 							</div>

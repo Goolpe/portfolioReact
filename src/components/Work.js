@@ -31,10 +31,16 @@ class Work extends Component{
 					    </Card>
 					    <p>{work.date}</p>
 					    <a href={work.github} className="btn btn-dark shadow" rel="noopener noreferrer" target="_blank">Github</a>
-					    <a href={work.url} className="btn btn-dark shadow ml-2" rel="noopener noreferrer" target="_blank">Website</a>
+					    {work.url && <a href={work.url} className="btn btn-dark shadow ml-2" rel="noopener noreferrer" target="_blank">Website</a>}
 		        	</div>
-		        	<div className="col-12 col-md-8 mt-4">
+
+		        	<div className="col-12 col-md-8 mt-4 text-left border-left ">
+		        		<h1>INFO</h1>
 		        		<p>{work.text}</p>
+		        		<h1 className="mt-5">TECHNOLOGIES</h1>
+		        		<p>FRONTEND: {work.frontend}</p>
+		        		{work.backend && <p>BACKEND: {work.backend}</p>}
+		        		{work.db && <p>DATABASE: {work.db}</p>}
 		        	</div>
 		        </div>		        
 			</div>

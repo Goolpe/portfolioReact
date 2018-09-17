@@ -6,13 +6,13 @@ class About extends Component{
 			<section id="About" style={{background: "#313438"}}>
 				<div className="container text-center" >
 					<h1 className="text-muted display-1 pt-5">ABOUT ME</h1>
-					<h2 className="text-muted mb-5" style={{marginTop: "100px"}}><span className="text-success">Hello, I’m Artur</span>, web-developer based in Russia.<br/>
+					<h3 className="text-muted mb-5" style={{marginTop: "100px"}}><span className="text-success">Hello, I’m Artur</span>, web-developer based in Russia.<br/>
 					I have experience in web site design & building
 					and customization. <br/> Also I am good at <span className="text-success">html, css, 
-					javascript, react/redux, bootstrap 4.</span></h2>
+					javascript, react/redux, bootstrap 4.</span></h3>
 					<hr/>
-					<div className="text-white row mt-5 text-left">
-						<div className="col-12 col-md-6">
+					<div className="text-white row text-left">
+						<div className="col-12 col-lg-6 mt-5">
 							<h2>Experience</h2>
 							<div className="bg-dark shadow p-3 mt-3">
 								<h5>Frontend Developer</h5>
@@ -22,7 +22,7 @@ class About extends Component{
 								- React.js - HTML5/CSS3 - Bootstrap 4 - Javascript - Photoshop.</p>
 							</div>
 						</div>
-						<div className="col-12 col-md-6">
+						<div className="col-12 col-lg-6 mt-5">
 							<h2>Education</h2>
 							<div className="bg-dark shadow p-3 mt-3">
 								<h5>Ufa State Petroleum Technological University</h5>
