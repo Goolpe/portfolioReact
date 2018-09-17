@@ -1,16 +1,8 @@
 import React, {Component} from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import { FaHome, FaCog, FaGithubAlt, FaLinkedinIn } from 'react-icons/fa';
+import { FiUser } from "react-icons/fi";
+import { UncontrolledTooltip } from 'reactstrap';
 
 class Navigation extends Component{
 	constructor(props){
@@ -27,8 +19,35 @@ class Navigation extends Component{
 	  }
 	render(){
 		return(
-			<div id="Navigation" className="fixed-top">
-				<Navbar className="bg-transparent" dark expand="md">
+			<div id="Navigation" className="position-absolute">
+				<div className="d-flex flex-column justify-content-between" style={{height: "100%"}}>
+					<ul className="text-center">
+						<li className="pb-3 pt-3"><Link to="/">G</Link></li>
+						<li className="pb-2 pt-2" id="TooltipHome"><Link to="/" ><FaHome color="white" size="1.2em"/></Link></li>
+						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipHome">
+					        Home
+					    </UncontrolledTooltip>
+						<li className="pb-2 pt-2" id="TooltipAbout"><Link to="/about"><FiUser color="white" size="1.2em"/></Link></li>
+						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipAbout">
+					        About
+					    </UncontrolledTooltip>
+						<li className="pb-2 pt-2" id="TooltipResume"><Link to="/resume"><FaCog color="white" size="1.2em"/></Link></li>
+						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipResume">
+					        Resume
+					    </UncontrolledTooltip> 
+					</ul>
+					<ul className="text-center">
+						<li className="pb-2 pt-2" id="TooltipGithub"><a href="https://github.com/goolpe" target="_blank"><FaGithubAlt color="white" size="1.2em"/></a></li>
+						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipGithub">
+					        Github
+					    </UncontrolledTooltip>
+						<li className="pb-2 pt-2" id="TooltipLinkedin"><a href="https://www.linkedin.com/goolpe" target="_blank"><FaLinkedinIn color="white" size="1.2em"/></a></li>
+						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipLinkedin">
+					        Linkedin
+					    </UncontrolledTooltip>
+					</ul>
+				</div>
+				{/*<Navbar className="bg-transparent" dark expand="md">
 		          <NavbarBrand href="/">Goolpe</NavbarBrand>
 		          <NavbarToggler onClick={this.toggle} />
 		          <Collapse isOpen={this.state.isOpen} navbar>
@@ -58,7 +77,8 @@ class Navigation extends Component{
 		              </UncontrolledDropdown>
 		            </Nav>
 		          </Collapse>
-		        </Navbar>
+		        </Navbar>*/}
+
 			</div>
 		)
 	}

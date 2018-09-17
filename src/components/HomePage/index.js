@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import About from './About';
-import Header from './Header';
 
 class HomePage extends Component{
 	constructor(props){
@@ -9,8 +7,11 @@ class HomePage extends Component{
 	render(){
 		return(
 			<div id="HomePage">
-				<Header />
-				<About />
+				<div className="wrapper text-center text-white">
+					<div className="d-flex justify-content-center ">
+						<h1 className="align-self-center font-weight-bold"><span>ARTUR | DEV</span></h1>
+					</div>
+				</div>
 			</div>
 		)
 	}
