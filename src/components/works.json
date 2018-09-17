@@ -1,32 +1,52 @@
 [
 	{
 		"id":0,
-		"title":"asdasd",
-		"picture":"https://images.pexels.com/photos/162539/architecture-building-amsterdam-blue-sky-162539.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+		"title":"Random rules",
+		"github":"https://github.com/Goolpe/rrules-client",
+		"url":"https://random-rules.herokuapp.com",
+		"picture":"https://pp.userapi.com/c840336/v840336939/5e60f/nb-GX9ymE5Y.jpg",
+		"text":"Single page application for tabletop role-playing games.",
+		"date": "July 2018 - Present",
 		"type": "SPA"
 	},
 	{
 		"id":1,
-		"title":"asdasd",
+		"title":"FasadKrovStroy",
+		"github":"",
+		"url":"",
 		"picture":"https://images.pexels.com/photos/162539/architecture-building-amsterdam-blue-sky-162539.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+		"text":"Loremsadasdas",
+		"date": "July 2018 - May 2018",
 		"type": "Shop"
 	},
 	{
 		"id":2,
 		"title":"asdasd",
+		"github":"",
+		"url":"",
 		"picture":"https://images.pexels.com/photos/162539/architecture-building-amsterdam-blue-sky-162539.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+		"text":"Loremsadasdas",
+		"date": "July 2018 - May 2018",
 		"type": "SPA"
 	},
 	{
 		"id":3,
 		"title":"asdasd",
+		"github":"",
+		"url":"",
 		"picture":"https://images.pexels.com/photos/162539/architecture-building-amsterdam-blue-sky-162539.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+		"text":"Loremsadasdas",
+		"date": "July 2018 - May 2018",
 		"type": "SPA"
 	},
 	{
 		"id":4,
 		"title":"asdasd",
+		"github":"",
+		"url":"",
 		"picture":"https://images.pexels.com/photos/162539/architecture-building-amsterdam-blue-sky-162539.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+		"text":"Loremsadasdas",
+		"date": "July 2018 - May 2018",
 		"type": "SPA"
 	}
 ]

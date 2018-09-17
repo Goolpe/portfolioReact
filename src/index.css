@@ -72,3 +72,8 @@ section{
     35% { margin-left:0px; }
     100% { margin-left:0px; }
 }
+
+#Works .card:hover{
+	transform: scale(1.1);
+	transition: .5s;
+}

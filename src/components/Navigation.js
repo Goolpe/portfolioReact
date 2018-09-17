@@ -37,15 +37,15 @@ class Navigation extends Component{
 					    </UncontrolledTooltip> 
 					</ul>
 					<ul className="text-center">
-						<li className="pb-2 pt-2" id="TooltipCV"><a href="https://drive.google.com/file/d/19JZKoj07JXDcXXVxltXzKr5bAzXOhJ6R/view?usp=sharing" target="_blank">CV</a></li>
+						<li className="pb-2 pt-2" id="TooltipCV"><a href="https://drive.google.com/file/d/19JZKoj07JXDcXXVxltXzKr5bAzXOhJ6R/view?usp=sharing" rel="noopener noreferrer" target="_blank">CV</a></li>
 						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipCV">
 					        Curriculum vitae
 					    </UncontrolledTooltip>
-						<li className="pb-2 pt-2" id="TooltipGithub"><a href="https://github.com/goolpe" target="_blank"><FaGithubAlt color="white" size="1.2em"/></a></li>
+						<li className="pb-2 pt-2" id="TooltipGithub"><a href="https://github.com/goolpe" rel="noopener noreferrer" target="_blank"><FaGithubAlt color="white" size="1.2em"/></a></li>
 						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipGithub">
 					        Github
 					    </UncontrolledTooltip>
-						<li className="pb-2 pt-2" id="TooltipLinkedin"><a href="https://www.linkedin.com/goolpe" target="_blank"><FaLinkedinIn color="white" size="1.2em"/></a></li>
+						<li className="pb-2 pt-2" id="TooltipLinkedin"><a href="https://www.linkedin.com/goolpe" rel="noopener noreferrer" target="_blank"><FaLinkedinIn color="white" size="1.2em"/></a></li>
 						<UncontrolledTooltip className="ml-1" placement="right" target="TooltipLinkedin">
 					        Linkedin
 					    </UncontrolledTooltip>

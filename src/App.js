@@ -9,6 +9,7 @@ import {
 import Home from './components/Home';
 import About from './components/About';
 import Works from './components/Works';
+import Work from './components/Work';
 import Navigation from './components/Navigation';
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
             <Route path="/" exact={true} component={Home} />
             <Route path="/about" component={About} />
             <Route path="/works" component={Works} />
+            <Route path="/work/:id" component={Work} />
           </Switch>
         </React.Fragment>
       </Router>
